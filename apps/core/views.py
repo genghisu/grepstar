@@ -20,7 +20,7 @@ def home(request):
                                         context_instance = RequestContext(request))
     
 def web_projects(request):
-    return shortcuts.render_to_response('web_projects.html',
+    return shortcuts.render_to_response('home.html',
                                         {},
                                         context_instance = RequestContext(request))
     

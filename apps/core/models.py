@@ -7,7 +7,6 @@ import json
 import pytz
 import math
 
-from django.contrib.gis.db import models
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes import generic
 from django.contrib.auth.models import User
