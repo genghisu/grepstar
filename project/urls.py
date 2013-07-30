@@ -5,7 +5,7 @@ from django.conf import settings
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^$', 'core.views.home', name='site-home'),
+    url(r'^$', 'core.views.mobile_projects', name='site-home'),
     url(r'^web/$', 'core.views.web_projects', name='site-web-projects'),
     url(r'^contact/$', 'core.views.contact', name='site-contact'),
     url(r'^mobile/$', 'core.views.mobile_projects', name='site-mobile-projects'),
