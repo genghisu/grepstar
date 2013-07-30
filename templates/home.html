@@ -1,0 +1,45 @@
+{% extends "site_base.html" %}
+
+{% block body_class %}home{% endblock %}
+{% block content_class %}{% endblock %}
+{% block title %}Han Xu{% endblock %}
+
+{% block script %}
+{% endblock %}
+  	
+{% block body %}
+		{% include "header.html" %}
+		<div id='content'>
+			<ul id='web-projects' class='projects row'>
+				<li id='picmobo-project' class='project' data-content="This site is the web component of the Picmobo photo sharing network.  It is powered by Django backed by GIS enabled Postgres. The frontend consists of a mix of JQuery, various JQuery plugins, the Foundation framework, Compass, SASS and various HTML5 components such as FileAPI, History and OnStateChange.  The site itself is fully ajax enabled in order to deliver a seemless user experience.  Image uploads are enabled by intergration with AWS S3 for backend storage.  Sharing to other social networks and other long running tasks are handled by RabbitMQ running in a clustered configuration.">
+					<figure>
+					</figure>
+					<figcaption>
+						picmobo.com - Cutting edge photo sharing site supporting the Picmobo network
+					</figcaption>
+				</li>
+				<li id='wisertogether-project' class='project' data-content="The WiserTogether suite of websites enables users to make better decisions about their health.  It is powered by Django backed by Postgres with a frontend consisting of JQuery and custom JavaScript.  Initially, the site had very little interactivity in terms of user generated content, so a solid caching strategy involving Memcached and Varnish allowed for a large amount of concurrent usage.  I was the technical lead for this project responsible for both backend and frontend development.  In addition, I took responsibility for provisioning AWS instances and deploying the product to AWS.">
+					<figure>
+					</figure>
+					<figcaption>
+						mywiserhealth.com - Helping people make better decisions about their health
+					</figcaption>
+				</li>
+				<li id='nationalgeographic-project' class='project' data-content="Built a custom CMS from the ground up while Django was still pre 1.0.  The toughest part of the project was creating a system for page creation that allowed for inheritance across pages, insertion of large variety of content including images and videos and preview before publishing.  My primary contributions were the publishing system and the page creation system which are still being utilized today.">
+					<figure>
+					</figure>
+					<figcaption>
+						nationalgeographic.com - Making the world a better place
+					</figcaption>
+				</li>
+				<li id='scratch-project' class='project' data-content="Built out the site for supporting Scratch projects at the MIT Media Lab.  Created administration backend for moderating projects and users.  Updated the commenting system with ajax enabled reply functionality.  Also scaled the webserver and MySQL database to support more than 100,000 daily page views.  The site was built using CakePHP on a LAMP stack backed by MySQL.">
+					<figure>
+					</figure>
+					<figcaption>
+						scratch.mit.edu - Helping kids learn programming using a fun and engaging WYSIWYG language
+					</figcaption>
+				</li>
+			</ul>
+		</div>
+		{% include "footer.html" %}
+{% endblock %}

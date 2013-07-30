@@ -1,0 +1,28 @@
+from settings import *
+
+DATABASE_SERVER = 'ec2-23-20-233-73.compute-1.amazonaws.com'
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'NAME': 'picmobo',
+        'USER': 'picmobo',
+        'PASSWORD': 'picmobo',
+        'HOST': DATABASE_SERVER,
+        'PORT': '5432',
+    }
+}
+
+AMQP_SERVER_URL = "http://107.22.171.149"
+
+S3_BUCKET = "picmobo-dev"
+S3_URL = "%s.s3.amazonaws.com" % (S3_BUCKET)
+AWS_SECRET_ACCESS_KEY = "ITrGuixukI0soZBBm3Cn7SG2HdVAPqMPUOIDnv+J"
+AWS_ACCESS_KEY_ID = "AKIAJN4APXZM5PM65BHA"
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+        'LOCATION': '127.0.0.1:11211',
+    }
+}

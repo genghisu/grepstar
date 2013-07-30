@@ -1,0 +1,137 @@
+#web-projects {
+	padding-top: 30px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	
+	li {
+		cursor: pointer;
+		display: block;
+		box-shadow: 0px 1px 3px rgba(0.0, 0.0, 0.0, 0.7);
+		border: 1px solid rgba(0.0, 0.0, 0.0, 0.1);
+		background-color: #ffffff;
+		padding: 20px 20px 10px 20px;
+		margin: 0px auto;
+		width: 840px;
+		margin-bottom: 20px;
+		
+		figure {
+			width: 800px;
+			height: 300px;
+			box-shadow: 0px 0px 5px rgba(0.0, 0.0, 0.0, 0.7) inset;
+		}
+		
+		figcaption {
+			font-size: 18px;
+			color: #444444;
+			padding-top: 10px;
+		}
+	}
+	
+	#picmobo-project figure {
+		background: url(/static/img/picmobo_sample.png) no-repeat;
+	}
+	
+	#wisertogether-project figure {
+		background: url(/static/img/wisertogether_sample.png) no-repeat;
+	}
+	
+	#nationalgeographic-project figure {
+		background: url(/static/img/national_geographic.png) no-repeat;
+	}
+	
+	#scratch-project figure {
+		background: url(/static/img/scratch_sample.png) no-repeat;
+	}
+}
+
+#content {
+	min-height: 300px;
+}
+
+#content h4 {
+	font-size: 20px;
+	text-align: center;
+	padding-top: 20px;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#contact {
+	box-shadow: 0px 1px 3px rgba(0.0, 0.0, 0.0, 0.7);
+	border: 1px solid rgba(0.0, 0.0, 0.0, 0.1);
+	background-color: #ffffff;
+	padding: 20px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	margin-top: 30px;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.mobile-projects {
+	padding-top: 10px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-align: center;
+	
+	li {
+		cursor: pointer;
+		display: -webkit-box;
+		display: -moz-box;
+		display: box;
+		
+		text-align: left;
+		
+		box-shadow: 0px 1px 3px rgba(0.0, 0.0, 0.0, 0.7);
+		border: 1px solid rgba(0.0, 0.0, 0.0, 0.1);
+		background-color: #ffffff;
+		padding: 20px;
+		margin: 0px auto;
+		width: 840px;
+		margin-bottom: 20px;
+		
+		-webkit-box-orient: inline-axis;
+		-moz-box-orient: inline-axis;
+		box-orient: inline-axis;
+	
+		-webkit-box-align: start;
+		-moz-box-align: start;
+		box-align: start;
+		
+		-webkit-box-pack: justify;
+		-moz-box-pack: justify;
+		box-pack: justify;
+		
+		img {
+			width: 128px;
+			height: 128px;
+			border-radius: 16px;
+			
+			-webkit-box-flex: 0;
+			-moz-box-flex: 0;
+			box-flex: 0;
+		}
+		
+		.description {
+			-webkit-box-flex: 1;
+			-moz-box-flex: 1;
+			box-flex: 1;
+			
+			height: 128px;
+			padding-left: 20px;
+			
+			.title {
+				font-size: 22px;
+			}
+			
+			.subtitle {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+section.error {
+	margin-top: 30px;
+	display: block;
+	text-align: center;
+	box-shadow: 0px 1px 3px rgba(0.0, 0.0, 0.0, 0.7);
+	border: 1px solid rgba(0.0, 0.0, 0.0, 0.1);
+	padding: 20px;
+}

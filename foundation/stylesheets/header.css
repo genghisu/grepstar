@@ -1,0 +1,194 @@
+/* line 2, ../sass/header.scss */
+.contain-to-grid.menu-bar-container {
+  background-color: #525252;
+  z-index: 20;
+  position: relative;
+}
+/* line 7, ../sass/header.scss */
+.contain-to-grid.banner-container {
+  background: url(/static/img/BannerBackground.png) center center no-repeat black;
+  height: 300px;
+}
+
+/* line 13, ../sass/header.scss */
+.top-bar {
+  background-color: #525252;
+  margin: 0px;
+  height: 60px;
+  padding: 10px 15px;
+  min-height: 40px;
+  line-height: 40px;
+}
+
+/* line 22, ../sass/header.scss */
+#header {
+  z-index: 25;
+  position: relative;
+}
+
+/* line 27, ../sass/header.scss */
+#logo {
+  width: 129px;
+  height: 40px;
+  background: url(/static/img/logo_header.png) no-repeat;
+}
+
+/* line 33, ../sass/header.scss */
+.menu-bar {
+  background-color: #525252;
+  height: 60px;
+  padding: 10px 0px;
+  min-height: 40px;
+  line-height: 40px;
+  z-index: 20;
+}
+/* line 34, ../sass/header.scss */
+.menu-bar #sign-in-form {
+  float: left;
+  margin: 0px;
+  position: relative;
+}
+/* line 39, ../sass/header.scss */
+.menu-bar #sign-up-button, .menu-bar #sign-in-button {
+  width: 97px;
+  text-align: center;
+  float: left;
+  display: block;
+  text-align: center;
+  margin-left: 6px;
+}
+/* line 53, ../sass/header.scss */
+.menu-bar .text:hover {
+  background: transparent !important;
+}
+/* line 57, ../sass/header.scss */
+.menu-bar .signin input {
+  display: block;
+  float: left;
+  width: 140px;
+  height: 40px;
+  background-color: #808080;
+  border-radius: 8px;
+  border: 0px;
+  font-weight: bold;
+  margin: 0px;
+}
+/* line 68, ../sass/header.scss */
+.menu-bar .signin .password {
+  margin-left: 10px;
+}
+/* line 72, ../sass/header.scss */
+.menu-bar .logo-container {
+  padding: 0px !important;
+}
+/* line 75, ../sass/header.scss */
+.menu-bar #signin-errors {
+  display: none;
+  position: absolute;
+  top: 50px;
+  z-index: 100;
+}
+/* line 81, ../sass/header.scss */
+.menu-bar .error-container {
+  min-width: 150px;
+  min-height: 40px;
+  background-color: #333333;
+  text-align: center;
+  line-height: 40px;
+  color: #ffffff;
+  padding: 0px 15px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px #555555;
+}
+/* line 92, ../sass/header.scss */
+.menu-bar #user-container, .menu-bar #anon-container {
+  float: left;
+}
+/* line 96, ../sass/header.scss */
+.menu-bar #user-container .logged-avatar {
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+/* line 103, ../sass/header.scss */
+.menu-bar #user-container .logged-username {
+  float: left;
+  background-color: #ebebeb;
+  height: 40px;
+  padding: 0px 12px;
+  min-width: 200px;
+  line-height: 40px;
+  margin-left: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+/* line 114, ../sass/header.scss */
+.menu-bar #user-container #sign-out-button {
+  float: left;
+  width: 97px;
+  text-align: center;
+  margin-left: 4px;
+}
+/* line 120, ../sass/header.scss */
+.menu-bar #user-container #upload-button {
+  line-height: 20px;
+  cursor: pointer;
+  width: 106px;
+  text-align: center;
+  float: left;
+  margin-left: 6px;
+}
+/* line 129, ../sass/header.scss */
+.menu-bar form {
+  margin: 0px;
+}
+/* line 133, ../sass/header.scss */
+.menu-bar #signin-errors:after {
+  content: "";
+  position: absolute;
+  border-bottom: 20px solid #333333;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  top: -10px;
+  left: 10px;
+}
+/* line 142, ../sass/header.scss */
+.menu-bar #signin-errors:before {
+  position: absolute;
+  color: white;
+  top: -35px;
+  left: 10px;
+  background: #333333;
+  padding: 5px 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+/* line 157, ../sass/header.scss */
+#ajaxStateSpinner {
+  display: block;
+  position: relative;
+  float: left;
+  z-index: 10000;
+  width: 24px;
+  height: 40px;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 171, ../sass/header.scss */
+#ajaxStateSpinner.loading {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  background: url(/static/img/spinner-medium.gif) no-repeat center center;
+}

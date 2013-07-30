@@ -1,0 +1,70 @@
+/* line 1, ../../foundation/sass/header.scss */
+#header {
+  padding-top: 110px;
+  text-align: center;
+  height: 360px;
+  background: url(/static/img/background_texture.png);
+  color: #FFFFFF;
+  min-width: 768px;
+}
+/* line 9, ../../foundation/sass/header.scss */
+#header .title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+/* line 15, ../../foundation/sass/header.scss */
+#header .subtitle {
+  padding-top: 50px;
+  font-size: 16px;
+}
+/* line 20, ../../foundation/sass/header.scss */
+#header .description {
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  width: 360px;
+  margin: 0px auto;
+}
+
+/* line 29, ../../foundation/sass/header.scss */
+#main-nav {
+  background-color: #ffffff;
+  height: 64px;
+  width: 100%;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+/* line 36, ../../foundation/sass/header.scss */
+#main-nav ul {
+  margin: 0px auto;
+  list-style: none;
+  height: 100%;
+  width: 1000px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  font-family: "Open Sans Condensed", sans-serif;
+  -webkit-box-orient: inline-axis;
+  -moz-box-orient: inline-axis;
+  box-orient: inline-axis;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  text-align: center;
+}
+/* line 54, ../../foundation/sass/header.scss */
+#main-nav ul li {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  font-size: 20px;
+}
+/* line 60, ../../foundation/sass/header.scss */
+#main-nav ul li a {
+  color: #777;
+}
+/* line 64, ../../foundation/sass/header.scss */
+#main-nav ul li a:hover {
+  text-decoration: underline;
+}

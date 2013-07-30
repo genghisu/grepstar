@@ -1,0 +1,65 @@
+/* line 2, ../sass/more_overlay.scss */
+#more-button-helper {
+  display: none;
+}
+
+/* line 6, ../sass/more_overlay.scss */
+#more-overlay-owner {
+  background-color: transparent;
+  min-width: 200px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* line 14, ../sass/more_overlay.scss */
+.more-overlay .title {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+/* line 18, ../sass/more_overlay.scss */
+.more-overlay .button-container {
+  margin-bottom: 10px;
+}
+/* line 20, ../sass/more_overlay.scss */
+.more-overlay .button-container.last {
+  margin-bottom: 0px;
+}
+
+/* line 26, ../sass/more_overlay.scss */
+#more-overlay, #flag-photo-overlay {
+  background-color: transparent;
+  min-width: 200px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* line 33, ../sass/more_overlay.scss */
+#flag-done-button {
+  width: 100px;
+  margin: 0px auto;
+}
+
+/* line 39, ../sass/more_overlay.scss */
+#flag-photo-overlay .title {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+/* line 43, ../sass/more_overlay.scss */
+#flag-photo-overlay input {
+  height: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid silver;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-bottom: 10px;
+}
+
+/* line 54, ../sass/more_overlay.scss */
+#delete-photo-overlay, #set-photo-private-overlay, #set-photo-public-overlay {
+  background-color: transparent;
+  min-width: 200px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+}

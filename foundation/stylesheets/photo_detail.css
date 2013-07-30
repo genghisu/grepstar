@@ -1,0 +1,258 @@
+/* line 2, ../sass/photo_detail.scss */
+#photo-detail-left {
+  background-color: #ffffff;
+  box-shadow: 2px 0px 6px -2px black;
+  padding-bottom: 15px;
+  z-index: 10;
+  min-height: 800px;
+  height: 100%;
+}
+
+/* line 11, ../sass/photo_detail.scss */
+#photo-container {
+  padding: 0px 15px;
+  text-align: center;
+}
+/* line 14, ../sass/photo_detail.scss */
+#photo-container .photo-wrapper {
+  border: 2px solid #959595;
+  text-align: center;
+  background-color: #333333;
+  width: 100%;
+  max-width: 596px;
+  min-width: 596px;
+  max-height: 604px;
+  position: relative;
+}
+
+/* line 26, ../sass/photo_detail.scss */
+#photo-detail-left .photo {
+  margin: 0px auto;
+  max-height: 600px;
+  max-width: 100%;
+  position: relative;
+  border: 2px solid #959595;
+  background-color: #959595;
+}
+
+/* line 35, ../sass/photo_detail.scss */
+#photo-detail-right {
+  background-color: #d7d7d7;
+  z-index: 5;
+  height: 100%;
+}
+
+/* line 41, ../sass/photo_detail.scss */
+#photo-caption {
+  min-height: 50px;
+  line-height: 26px;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* line 50, ../sass/photo_detail.scss */
+.photo_detail_body {
+  background-color: #bcddeb;
+}
+
+/* line 54, ../sass/photo_detail.scss */
+#comments-icon {
+  background: url(/static/img/comments_icon.png) no-repeat left center;
+  width: 30px;
+  height: 42px;
+  float: left;
+}
+
+/* line 61, ../sass/photo_detail.scss */
+#comment-box {
+  float: left;
+  margin-left: 10px;
+  height: 41px;
+  border-radius: 10px;
+  padding: 5px;
+  width: 345px;
+}
+
+/* line 70, ../sass/photo_detail.scss */
+#comments-container, #comments {
+  padding-top: 10px;
+}
+
+/* line 74, ../sass/photo_detail.scss */
+#add-comment-container {
+  height: 46px;
+  width: 100%;
+  display: none;
+}
+
+/* line 80, ../sass/photo_detail.scss */
+#add-comment-button {
+  display: block;
+  float: right;
+  width: 97px;
+  text-align: center;
+  display: block;
+  text-align: center;
+}
+
+/* line 89, ../sass/photo_detail.scss */
+#likers-container {
+  padding-top: 10px;
+  padding-left: 8px;
+}
+
+/* line 94, ../sass/photo_detail.scss */
+#like-button {
+  display: block;
+  width: 110px;
+  text-align: center;
+  float: left;
+}
+
+/* line 101, ../sass/photo_detail.scss */
+#more-button {
+  width: 69px;
+  float: right;
+  text-align: center;
+}
+
+/* line 107, ../sass/photo_detail.scss */
+#likers-title {
+  text-align: center;
+  font-weight: bold;
+  background-color: #484848;
+  border-radius: 8px;
+  height: 32px;
+  color: #ffffff;
+  line-height: 32px;
+  margin-top: 8px;
+}
+
+/* line 118, ../sass/photo_detail.scss */
+#buttons-container {
+  padding-left: 15px;
+}
+
+/* line 122, ../sass/photo_detail.scss */
+#likers-title-container {
+  padding-left: 15px;
+  padding-top: 2px;
+}
+
+/* line 127, ../sass/photo_detail.scss */
+#likers-content-container {
+  padding-left: 15px;
+  padding-top: 5px;
+}
+/* line 130, ../sass/photo_detail.scss */
+#likers-content-container .liker-avatar {
+  float: left;
+  height: 36px;
+  width: 36px;
+  border-radius: 6px;
+  margin-right: 1px;
+  margin-bottom: 2px;
+}
+
+/* line 140, ../sass/photo_detail.scss */
+.get-app-button {
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 9px;
+  width: 150px;
+}
+
+/* line 148, ../sass/photo_detail.scss */
+#author-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 151, ../sass/photo_detail.scss */
+#author-container .author-avatar {
+  width: 40px;
+  height: 40px;
+  float: left;
+  border-radius: 6px;
+}
+/* line 157, ../sass/photo_detail.scss */
+#author-container .author-name {
+  padding-left: 10px;
+  font-weight: bold;
+  float: left;
+  line-height: 40px;
+  height: 40px;
+}
+
+/* line 166, ../sass/photo_detail.scss */
+#follow-button {
+  display: block;
+  width: 120px;
+  text-align: center;
+  float: right;
+}
+
+/* line 173, ../sass/photo_detail.scss */
+.followers-container .follower-avatar {
+  float: left;
+  height: 38px;
+  width: 38px;
+  border-radius: 6px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+
+/* line 182, ../sass/photo_detail.scss */
+.additional-photo {
+  width: 89px;
+  height: 89px;
+  border-radius: 10px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+
+/* line 191, ../sass/photo_detail.scss */
+.comment-container {
+  padding-bottom: 8px;
+}
+/* line 193, ../sass/photo_detail.scss */
+.comment-container .comment-avatar {
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+}
+/* line 199, ../sass/photo_detail.scss */
+.comment-container .comments-content {
+  float: left;
+  padding-left: 7px;
+  width: 340px;
+}
+/* line 203, ../sass/photo_detail.scss */
+.comment-container .comments-content .author-name {
+  float: left;
+  width: 50%;
+  color: #1880b1;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+}
+/* line 211, ../sass/photo_detail.scss */
+.comment-container .comments-content .comment-time {
+  float: right;
+  width: 30%;
+  font-size: 11px;
+  line-height: 14px;
+  text-align: right;
+}
+/* line 218, ../sass/photo_detail.scss */
+.comment-container .comments-content .comment-body {
+  float: left;
+  width: 100%;
+  padding-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+}

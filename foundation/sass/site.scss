@@ -1,0 +1,53 @@
+html {
+  padding: 0px;
+  height: 100%;
+  font-family: 'Quando', serif;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  font-family: 'Quando', serif;
+  background-color: #f5f5f5;
+  
+}
+
+.clear {
+  clear: both;
+}
+
+.divider {
+  height: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.row {
+  min-width: 1000px;
+  width: 1000px;
+  max-width: 1000px;
+}
+
+.center {
+  margin: 0px auto;
+}
+
+.small-font {
+  font-size: 11px !important;
+}
+
+div:focus {
+  outline: none;
+}
+
+
+#content-wrapper {
+  
+}
+
+#content {
+  
+}

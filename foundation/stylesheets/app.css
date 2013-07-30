@@ -1,0 +1,2932 @@
+/* Requires: normalize.css */
+/* Global Reset & Standards ---------------------- */
+/* line 5, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 6, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 7, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
+body {
+  background: white;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1;
+  color: #222222;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Links ---------------------- */
+/* line 11, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
+a img {
+  border: none;
+}
+
+/* line 12, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
+a {
+  color: #2ba6cb;
+  text-decoration: none;
+  line-height: inherit;
+}
+
+/* line 13, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
+a:hover {
+  color: #2795b6;
+}
+
+/* line 14, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
+a:focus {
+  color: #2795b6;
+}
+
+/* line 15, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
+p a, p a:visited {
+  line-height: inherit;
+}
+
+/* Misc ---------------------- */
+/* line 19, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
+.left {
+  float: left;
+}
+
+/* line 20, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
+.right {
+  float: right;
+}
+
+/* line 21, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 22, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 23, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 24, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
+.hide {
+  display: none;
+}
+
+/* line 25, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
+.hide-override {
+  display: none !important;
+}
+
+/* line 26, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
+.highlight {
+  background: #ffff99;
+}
+
+/* line 28, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
+#googlemap img, object, embed {
+  max-width: none;
+}
+
+/* line 30, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
+#map_canvas embed {
+  max-width: none;
+}
+
+/* line 31, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
+#map_canvas img {
+  max-width: none;
+}
+
+/* line 32, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
+#map_canvas object {
+  max-width: none;
+}
+
+/* Reset for strange margins by default on <figure> elements */
+/* line 35, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
+figure {
+  margin: 0;
+}
+
+/* The Grid ---------------------- */
+/* line 3, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.row {
+  width: 1000px;
+  max-width: 100%;
+  min-width: 768px;
+  margin: 0 auto;
+}
+/* line 4, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.row .row {
+  width: auto;
+  max-width: none;
+  min-width: 0;
+  margin: 0 -15px;
+}
+/* line 7, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.row.collapse .column, .row.collapse .columns {
+  padding: 0;
+}
+/* line 9, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.row .row {
+  width: auto;
+  max-width: none;
+  min-width: 0;
+  margin: 0 -15px;
+}
+/* line 10, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.row .row.collapse {
+  margin: 0;
+}
+
+/* line 14, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.column, .columns {
+  float: left;
+  min-height: 1px;
+  padding: 0 15px;
+  position: relative;
+}
+/* line 15, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.column.centered, .columns.centered {
+  float: none;
+  margin: 0 auto;
+}
+
+/* line 18, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+[class*="column"] + [class*="column"]:last-child {
+  float: right;
+}
+
+/* line 19, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+[class*="column"] + [class*="column"].end {
+  float: left;
+}
+
+/* line 23, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.one, .row .one {
+  width: 8.33333%;
+}
+
+/* line 23, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.two, .row .two {
+  width: 16.66667%;
+}
+
+/* line 23, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.three, .row .three {
+  width: 25%;
+}
+
+/* line 23, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.four, .row .four {
+  width: 33.33333%;
+}
+
+/* line 23, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.five, .row .five {
+  width: 41.66667%;
+}
+
+/* line 23, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.six, .row .six {
+  width: 50%;
+}
+
+/* line 23, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.seven, .row .seven {
+  width: 58.33333%;
+}
+
+/* line 23, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.eight, .row .eight {
+  width: 66.66667%;
+}
+
+/* line 23, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.nine, .row .nine {
+  width: 75%;
+}
+
+/* line 23, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.ten, .row .ten {
+  width: 83.33333%;
+}
+
+/* line 23, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.eleven, .row .eleven {
+  width: 91.66667%;
+}
+
+/* line 23, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.twelve, .row .twelve {
+  width: 100%;
+}
+
+/* line 36, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.row .offset-by-one {
+  margin-left: 8.33333%;
+}
+
+/* line 36, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.row .offset-by-two {
+  margin-left: 16.66667%;
+}
+
+/* line 36, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.row .offset-by-three {
+  margin-left: 25%;
+}
+
+/* line 36, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.row .offset-by-four {
+  margin-left: 33.33333%;
+}
+
+/* line 36, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.row .offset-by-five {
+  margin-left: 41.66667%;
+}
+
+/* line 36, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.row .offset-by-six {
+  margin-left: 50%;
+}
+
+/* line 36, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.row .offset-by-seven {
+  margin-left: 58.33333%;
+}
+
+/* line 36, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.row .offset-by-eight {
+  margin-left: 66.66667%;
+}
+
+/* line 36, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.row .offset-by-nine {
+  margin-left: 75%;
+}
+
+/* line 36, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.row .offset-by-ten {
+  margin-left: 83.33333%;
+}
+
+/* line 42, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.push-two {
+  left: 16.66667%;
+}
+
+/* line 43, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.pull-two {
+  right: 16.66667%;
+}
+
+/* line 42, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.push-three {
+  left: 25%;
+}
+
+/* line 43, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.pull-three {
+  right: 25%;
+}
+
+/* line 42, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.push-four {
+  left: 33.33333%;
+}
+
+/* line 43, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.pull-four {
+  right: 33.33333%;
+}
+
+/* line 42, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.push-five {
+  left: 41.66667%;
+}
+
+/* line 43, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.pull-five {
+  right: 41.66667%;
+}
+
+/* line 42, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.push-six {
+  left: 50%;
+}
+
+/* line 43, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.pull-six {
+  right: 50%;
+}
+
+/* line 42, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.push-seven {
+  left: 58.33333%;
+}
+
+/* line 43, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.pull-seven {
+  right: 58.33333%;
+}
+
+/* line 42, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.push-eight {
+  left: 66.66667%;
+}
+
+/* line 43, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.pull-eight {
+  right: 66.66667%;
+}
+
+/* line 42, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.push-nine {
+  left: 75%;
+}
+
+/* line 43, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.pull-nine {
+  right: 75%;
+}
+
+/* line 42, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.push-ten {
+  left: 83.33333%;
+}
+
+/* line 43, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.pull-ten {
+  right: 83.33333%;
+}
+
+/* line 46, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+img {
+  height: auto;
+}
+
+/* line 47, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+img, object, embed {
+  max-width: 100%;
+}
+
+/* line 48, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 49, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+#map_canvas img, .map_canvas img {
+  max-width: none!important;
+}
+
+/* Nicolas Gallagher's micro clearfix */
+/* line 52, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.row {
+  *zoom: 1;
+}
+/* line 4, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/mixins/_clearfix.scss */
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+/* line 5, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/mixins/_clearfix.scss */
+.row:after {
+  clear: both;
+}
+
+/* Block Grids ---------------------- */
+/* These are 2-up, 3-up, 4-up and 5-up ULs, suited
+for repeating blocks of content. Add 'mobile' to
+them to switch them just like the layout grid
+(one item per line) on phones
+
+For IE7/8 compatibility block-grid items need to be
+the same height. You can optionally uncomment the
+lines below to support arbitrary height, but know
+that IE7/8 do not support :nth-child.
+-------------------------------------------------- */
+/* line 67, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid {
+  display: block;
+  overflow: hidden;
+  padding: 0;
+}
+/* line 69, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid > li {
+  display: block;
+  height: auto;
+  float: left;
+}
+/* line 72, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.one-up {
+  margin: 0;
+}
+/* line 78, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.one-up > li {
+  width: 100%;
+  padding: 0 0 15px;
+}
+/* line 72, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.two-up {
+  margin: 0 -15px;
+}
+/* line 78, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.two-up > li {
+  width: 50%;
+  padding: 0 15px 15px;
+}
+/* line 85, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.two-up > li:nth-child(2n+1) {
+  clear: both;
+}
+/* line 72, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.three-up {
+  margin: 0 -12px;
+}
+/* line 78, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.three-up > li {
+  width: 33.33333%;
+  padding: 0 12px 12px;
+}
+/* line 85, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.three-up > li:nth-child(3n+1) {
+  clear: both;
+}
+/* line 72, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.four-up {
+  margin: 0 -10px;
+}
+/* line 78, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.four-up > li {
+  width: 25%;
+  padding: 0 10px 10px;
+}
+/* line 85, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.four-up > li:nth-child(4n+1) {
+  clear: both;
+}
+/* line 72, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.five-up {
+  margin: 0 -8px;
+}
+/* line 78, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.five-up > li {
+  width: 20%;
+  padding: 0 8px 8px;
+}
+/* line 85, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.five-up > li:nth-child(5n+1) {
+  clear: both;
+}
+/* line 72, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.six-up {
+  margin: 0 -8px;
+}
+/* line 78, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.six-up > li {
+  width: 16.66667%;
+  padding: 0 8px 8px;
+}
+/* line 85, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.six-up > li:nth-child(6n+1) {
+  clear: both;
+}
+/* line 72, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.seven-up {
+  margin: 0 -8px;
+}
+/* line 78, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.seven-up > li {
+  width: 14.28571%;
+  padding: 0 8px 8px;
+}
+/* line 85, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.seven-up > li:nth-child(7n+1) {
+  clear: both;
+}
+/* line 72, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.eight-up {
+  margin: 0 -8px;
+}
+/* line 78, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.eight-up > li {
+  width: 12.5%;
+  padding: 0 8px 8px;
+}
+/* line 85, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.eight-up > li:nth-child(8n+1) {
+  clear: both;
+}
+/* line 72, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.nine-up {
+  margin: 0 -8px;
+}
+/* line 78, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.nine-up > li {
+  width: 11.11111%;
+  padding: 0 8px 8px;
+}
+/* line 85, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.nine-up > li:nth-child(9n+1) {
+  clear: both;
+}
+/* line 72, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.ten-up {
+  margin: 0 -8px;
+}
+/* line 78, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.ten-up > li {
+  width: 10%;
+  padding: 0 8px 8px;
+}
+/* line 85, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.ten-up > li:nth-child(10n+1) {
+  clear: both;
+}
+/* line 72, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.eleven-up {
+  margin: 0 -8px;
+}
+/* line 78, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.eleven-up > li {
+  width: 9.09091%;
+  padding: 0 8px 8px;
+}
+/* line 85, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.eleven-up > li:nth-child(11n+1) {
+  clear: both;
+}
+/* line 72, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.twelve-up {
+  margin: 0 -8px;
+}
+/* line 78, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.twelve-up > li {
+  width: 8.33333%;
+  padding: 0 8px 8px;
+}
+/* line 85, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
+.block-grid.twelve-up > li:nth-child(12n+1) {
+  clear: both;
+}
+
+/* Base Type Styles Using Modular Scale ---------------------- */
+/* line 3, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  direction: ltr;
+}
+
+/* line 10, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+p {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 17px;
+}
+/* line 11, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+p.lead {
+  font-size: 17.5px;
+  line-height: 1.6;
+  margin-bottom: 17px;
+}
+
+/* line 13, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+aside p {
+  font-size: 13px;
+  line-height: 1.35;
+  font-style: italic;
+}
+
+/* line 15, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #222222;
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
+  margin-bottom: 14px;
+  margin-top: 14px;
+}
+/* line 24, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  font-size: 60%;
+  color: #6f6f6f;
+  line-height: 0;
+}
+
+/* line 27, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+h1 {
+  font-size: 44px;
+}
+
+/* line 28, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+h2 {
+  font-size: 37px;
+}
+
+/* line 29, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+h3 {
+  font-size: 27px;
+}
+
+/* line 30, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+h4 {
+  font-size: 23px;
+}
+
+/* line 31, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+h5 {
+  font-size: 17px;
+}
+
+/* line 32, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+h6 {
+  font-size: 14px;
+}
+
+/* line 34, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+hr {
+  border: solid #dddddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 22px 0 21px;
+  height: 0;
+}
+
+/* line 36, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+.subheader {
+  line-height: 1.3;
+  color: #6f6f6f;
+  font-weight: 300;
+  margin-bottom: 17px;
+}
+
+/* line 38, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+em, i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+/* line 39, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+strong, b {
+  font-weight: bold;
+  line-height: inherit;
+}
+
+/* line 40, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+small {
+  font-size: 60%;
+  line-height: inherit;
+}
+
+/* line 41, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+code {
+  font-weight: bold;
+  background: #ffff99;
+}
+
+/* Lists ---------------------- */
+/* line 44, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+ul, ol, dl {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 17px;
+  list-style-position: outside;
+}
+
+/* line 47, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+ul li ul, ul li ol {
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+/* line 49, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+ul.square, ul.circle, ul.disc {
+  margin-left: 17px;
+}
+/* line 50, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+ul.square {
+  list-style-type: square;
+}
+/* line 51, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+ul.square li ul {
+  list-style: inherit;
+}
+/* line 53, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+ul.circle {
+  list-style-type: circle;
+}
+/* line 54, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+ul.circle li ul {
+  list-style: inherit;
+}
+/* line 56, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+ul.disc {
+  list-style-type: disc;
+}
+/* line 57, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+ul.disc li ul {
+  list-style: inherit;
+}
+/* line 59, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+ul.no-bullet {
+  list-style: none;
+}
+/* line 60, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+ul.large li {
+  line-height: 21px;
+}
+
+/* line 62, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+ol {
+  margin-left: 20px;
+}
+/* line 64, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+ol li ul, ol li ol {
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+/* Blockquotes ---------------------- */
+/* line 69, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+blockquote, blockquote p {
+  line-height: 1.5;
+  color: #6f6f6f;
+}
+
+/* line 70, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+blockquote {
+  margin: 0 0 17px;
+  padding: 9px 20px 0 19px;
+  border-left: 1px solid #dddddd;
+}
+/* line 71, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+blockquote cite {
+  display: block;
+  font-size: 13px;
+  color: #555555;
+}
+/* line 72, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+blockquote cite:before {
+  content: "\2014 \0020";
+}
+/* line 73, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+blockquote cite a, blockquote cite a:visited {
+  color: #555555;
+}
+
+/* line 77, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+abbr, acronym {
+  text-transform: uppercase;
+  font-size: 90%;
+  color: #222222;
+  border-bottom: 1px solid #dddddd;
+  cursor: help;
+}
+
+/* line 78, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+abbr {
+  text-transform: none;
+}
+
+/*
+ * Print styles.
+ *
+ * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+ * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
+*/
+/* line 86, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+.print-only {
+  display: none !important;
+}
+
+@media print {
+  /* line 88, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  /* Black prints faster: h5bp.com/s */
+  /* line 89, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 90, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 91, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 92, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  /* Don't show links for images, or javascript/internal links */
+  /* line 93, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+  pre, blockquote {
+    border: 1px solid #999999;
+    page-break-inside: avoid;
+  }
+
+  /* line 94, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* h5bp.com/t */
+  /* line 95, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  /* line 96, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 98, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 99, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+  h2, h3 {
+    page-break-after: avoid;
+  }
+
+  /* line 100, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+  .hide-on-print {
+    display: none !important;
+  }
+
+  /* line 101, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+  .print-only {
+    display: block !important;
+  }
+
+  /* line 102, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+  .hide-for-print {
+    display: none !important;
+  }
+
+  /* line 103, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
+  .show-for-print {
+    display: inherit !important;
+  }
+}
+/* Requires
+   globals.css */
+/* Standard Forms ---------------------- */
+/* line 6, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form {
+  margin: 0 0 19.41641px;
+}
+
+/* line 8, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+.row form .row {
+  margin: 0 -6px;
+}
+/* line 10, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+.row form .row .column, .row form .row .columns {
+  padding: 0 6px;
+}
+/* line 12, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+.row form .row.collapse {
+  margin: 0;
+}
+/* line 13, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+.row form .row.collapse .column, .row form .row.collapse .columns {
+  padding: 0;
+}
+
+/* line 17, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+label {
+  font-size: 14px;
+  color: #4d4d4d;
+  cursor: pointer;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+/* line 19, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+label.right {
+  float: none;
+  text-align: right;
+}
+/* line 20, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+label.inline {
+  line-height: 32px;
+  margin: 0 0 12px 0;
+}
+
+/* line 23, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+.prefix, .postfix {
+  display: block;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 32px;
+  line-height: 31px;
+}
+
+/* line 24, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+a.button.prefix, a.button.postfix {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+/* line 25, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+span.prefix, span.postfix {
+  background: #f2f2f2;
+  border: 1px solid #cccccc;
+}
+
+/* line 27, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+.prefix {
+  left: 2px;
+  -moz-border-radius-topleft: 2px;
+  -webkit-border-top-left-radius: 2px;
+  border-top-left-radius: 2px;
+  -moz-border-radius-bottomleft: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  overflow: hidden;
+}
+
+/* line 28, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+.postfix {
+  right: 2px;
+  -moz-border-radius-topright: 2px;
+  -webkit-border-top-right-radius: 2px;
+  border-top-right-radius: 2px;
+  -moz-border-radius-bottomright: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+/* line 30, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+  background-color: white;
+  font-family: inherit;
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  font-size: 14px;
+  margin: 0 0 12px 0;
+  padding: 6px;
+  height: 32px;
+  width: 100%;
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+/* line 32, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+input[type="text"].oversize, input[type="password"].oversize, input[type="date"].oversize, input[type="datetime"].oversize, input[type="email"].oversize, input[type="number"].oversize, input[type="search"].oversize, input[type="tel"].oversize, input[type="time"].oversize, input[type="url"].oversize, textarea.oversize {
+  font-size: 17px;
+  padding: 4px 6px;
+}
+/* line 34, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, textarea:focus {
+  background: #fafafa;
+  border-color: #b3b3b3;
+}
+/* line 35, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+input[type="text"][disabled], input[type="password"][disabled], input[type="date"][disabled], input[type="datetime"][disabled], input[type="email"][disabled], input[type="number"][disabled], input[type="search"][disabled], input[type="tel"][disabled], input[type="time"][disabled], input[type="url"][disabled], textarea[disabled] {
+  background-color: #ddd;
+}
+
+/* line 38, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+textarea {
+  height: auto;
+}
+
+/* line 40, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+select {
+  width: 100%;
+}
+
+/* Fieldsets */
+/* line 43, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+fieldset {
+  border: solid 1px #dddddd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 12px;
+  margin: 18px 0;
+}
+/* line 45, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+fieldset legend {
+  font-weight: bold;
+  background: white;
+  padding: 0 3px;
+  margin: 0;
+  margin-left: -3px;
+}
+
+/* Errors */
+/* line 49, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+.error input, input.error, .error textarea, textarea.error, .error input:focus, input.error:focus, .error textarea:focus, textarea.error:focus {
+  border-color: #c60f13;
+  background-color: rgba(198, 15, 19, 0.1);
+}
+
+/* line 50, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+.error input:focus, input.error:focus, .error textarea:focus, textarea.error:focus {
+  outline-color: #f5797c;
+}
+
+/* line 51, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+.error label, label.error {
+  color: #c60f13;
+}
+
+/* line 52, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+.error small, small.error {
+  display: block;
+  padding: 6px 4px;
+  margin-top: -13px;
+  margin-bottom: 12px;
+  background: #c60f13;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  -moz-border-radius-bottomleft: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  -moz-border-radius-bottomright: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+/* Custom Forms ---------------------- */
+/* line 55, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom {
+  /* Custom input, disabled */
+}
+/* line 57, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom span.custom {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 2px;
+  border: solid 1px #cccccc;
+  background: white;
+}
+/* line 59, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom span.custom.radio {
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+}
+/* line 61, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom span.custom.checkbox:before {
+  content: "";
+  display: block;
+  line-height: 0.8;
+  height: 14px;
+  width: 14px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 14px;
+  color: #fff;
+}
+/* line 64, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom span.custom.radio.checked:before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  background: #222222;
+  position: relative;
+  top: 3px;
+  left: 3px;
+}
+/* line 67, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom span.custom.checkbox.checked:before {
+  content: "\00d7";
+  color: #222222;
+}
+/* line 70, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom div.custom.dropdown {
+  display: block;
+  position: relative;
+  width: auto;
+  height: 28px;
+  margin-bottom: 9px;
+  margin-top: 2px;
+}
+/* line 72, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom div.custom.dropdown ul {
+  overflow-y: auto;
+  max-height: 200px;
+}
+/* line 73, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom div.custom.dropdown a.current {
+  display: block;
+  width: auto;
+  line-height: 26px;
+  min-height: 28px;
+  padding: 0;
+  padding-left: 6px;
+  padding-right: 38px;
+  border: solid 1px #dddddd;
+  color: #141414;
+  background-color: white;
+  white-space: nowrap;
+}
+/* line 74, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom div.custom.dropdown a.selector {
+  position: absolute;
+  width: 27px;
+  height: 28px;
+  display: block;
+  right: 0;
+  top: 0;
+  border: solid 1px #dddddd;
+}
+/* line 75, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom div.custom.dropdown a.selector:after {
+  content: "";
+  display: block;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: solid 5px;
+  border-color: #aaaaaa transparent transparent transparent;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -2px;
+  margin-left: -5px;
+}
+/* line 78, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom div.custom.dropdown:hover a.selector:after, form.custom div.custom.dropdown.open a.selector:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: solid 5px;
+  border-color: #222222 transparent transparent transparent;
+}
+/* line 81, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom div.custom.dropdown.open ul {
+  display: block;
+  z-index: 10;
+}
+/* line 83, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom div.custom.dropdown.small {
+  width: 134px !important;
+}
+/* line 84, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom div.custom.dropdown.medium {
+  width: 254px !important;
+}
+/* line 85, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom div.custom.dropdown.large {
+  width: 434px !important;
+}
+/* line 86, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom div.custom.dropdown.expand {
+  width: 100% !important;
+}
+/* line 88, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom div.custom.dropdown.open.small ul {
+  width: 134px !important;
+}
+/* line 89, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom div.custom.dropdown.open.medium ul {
+  width: 254px !important;
+}
+/* line 90, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom div.custom.dropdown.open.large ul {
+  width: 434px !important;
+}
+/* line 91, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom div.custom.dropdown.open.expand ul {
+  width: 100% !important;
+}
+/* line 94, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom div.custom.dropdown ul {
+  position: absolute;
+  width: auto;
+  display: none;
+  margin: 0;
+  left: 0;
+  top: 27px;
+  margin: 0;
+  padding: 0;
+  background: white;
+  background: rgba(255, 255, 255, 0.95);
+  border: solid 1px #cccccc;
+}
+/* line 96, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom div.custom.dropdown ul li {
+  color: #555555;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 3px;
+  padding-left: 6px;
+  padding-right: 38px;
+  min-height: 18px;
+  line-height: 18px;
+  margin: 0;
+  white-space: nowrap;
+  list-style: none;
+}
+/* line 97, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom div.custom.dropdown ul li.selected {
+  background: #cdebf5;
+  color: black;
+}
+/* line 98, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom div.custom.dropdown ul li.selected:after {
+  content: "\2013";
+  position: absolute;
+  right: 10px;
+}
+/* line 100, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom div.custom.dropdown ul li:hover {
+  background-color: #cdebf5;
+  color: black;
+}
+/* line 101, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom div.custom.dropdown ul li:hover:after {
+  content: "\2013";
+  position: absolute;
+  right: 10px;
+  color: #a3dbec;
+}
+/* line 103, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom div.custom.dropdown ul li.selected:hover {
+  background: #cdebf5;
+  cursor: default;
+  color: black;
+}
+/* line 104, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom div.custom.dropdown ul li.selected:hover:after {
+  color: black;
+}
+/* line 106, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom div.custom.dropdown ul.show {
+  display: block;
+}
+/* line 110, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+form.custom .custom.disabled {
+  background-color: #dddddd;
+}
+
+/* Correct FF custom dropdown height */
+@-moz-document url-prefix() {
+  /* line 115, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+  form.custom div.custom.dropdown a.selector {
+    height: 28px;
+  }
+}
+
+/* line 117, ../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
+.lt-ie9 form.custom div.custom.dropdown a.selector {
+  height: 28px;
+}
+
+/* line 1, ../sass/site.scss */
+html {
+  padding: 0px;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 7, ../sass/site.scss */
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  background-color: #bcddeb;
+}
+
+/* line 15, ../sass/site.scss */
+.clear {
+  clear: both;
+}
+
+/* line 19, ../sass/site.scss */
+.divider {
+  height: 10px;
+}
+
+/* line 23, ../sass/site.scss */
+.hidden {
+  display: none;
+}
+
+/* line 27, ../sass/site.scss */
+.row {
+  min-width: 940px;
+  width: 940px;
+  max-width: 940px;
+}
+
+/* line 33, ../sass/site.scss */
+.center {
+  margin: 0px auto;
+}
+
+/* line 37, ../sass/site.scss */
+.small-font {
+  font-size: 11px !important;
+}
+
+/* line 41, ../sass/site.scss */
+div:focus {
+  outline: none;
+}
+
+/* line 46, ../sass/site.scss */
+.photos-container .columns {
+  padding: 0px;
+}
+/* line 49, ../sass/site.scss */
+.photos-container .photo-link {
+  display: block;
+  z-index: 1000;
+  position: relative;
+}
+/* line 54, ../sass/site.scss */
+.photos-container .photo {
+  width: 148px;
+  height: 148px;
+  background-color: white;
+  border: 1px solid #333333;
+  margin-bottom: 2px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 1000;
+}
+/* line 65, ../sass/site.scss */
+.photos-container .photo:hover {
+  -webkit-transform: scale(1.4) rotate(6deg);
+  -webkit-backface-visibility: hidden;
+  -moz-transform: scale(1.4) rotate(6deg);
+  -moz-backface-visibility: hidden;
+  transform: scale(1.4) rotate(6deg);
+  backface-visibility: hidden;
+  z-index: 2000;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+/* line 77, ../sass/site.scss */
+.photos-container .photo-link:hover {
+  z-index: 2000;
+}
+
+/* line 83, ../sass/site.scss */
+#content-wrapper {
+  min-height: 900px;
+}
+
+/* line 87, ../sass/site.scss */
+#content {
+  background-color: #bcddeb;
+  z-index: 1;
+  position: relative;
+}
+
+/* line 93, ../sass/site.scss */
+#content-inner {
+  min-height: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* line 99, ../sass/site.scss */
+#main-content {
+  box-shadow: 0px 0px 6px #333333;
+  background-color: #d7d7d7;
+  z-index: 1;
+  min-height: 100%;
+  height: 100%;
+  position: relative;
+}
+/* line 106, ../sass/site.scss */
+#main-content.standard {
+  background-color: #ffffff;
+}
+
+/* line 112, ../sass/site.scss */
+.subsection .title {
+  height: 32px;
+  background-color: #8d8d8d;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 8px;
+  color: #ffffff;
+  line-height: 32px;
+}
+/* line 121, ../sass/site.scss */
+.subsection .contents {
+  min-height: 50px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+/* line 128, ../sass/site.scss */
+.app-container {
+  padding-top: 10px;
+}
+
+/* line 132, ../sass/site.scss */
+.app-container-inner {
+  border-bottom: 1px solid #969696;
+  padding-bottom: 5px;
+}
+
+/* line 138, ../sass/site.scss */
+.app-container .app-icon {
+  float: left;
+  width: 75px;
+  height: 75px;
+  border-radius: 8px;
+}
+/* line 144, ../sass/site.scss */
+.app-container .app-details {
+  float: left;
+  padding-left: 5px;
+  width: calc(100% - 75px);
+  width: -webkit-calc(100% - 75px);
+  width: -moz-calc(100% - 75px);
+}
+/* line 150, ../sass/site.scss */
+.app-container .app-details .app-name {
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  padding-top: 2px;
+}
+
+/* line 1, ../sass/buttons.scss */
+.bluebutton, .orangebutton, .greybutton, .greenbutton {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  height: 20px;
+  border-style: solid;
+  border-width: 10px;
+  border-radius: 6px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  line-heigth: 20px;
+}
+
+/* line 16, ../sass/buttons.scss */
+.button-container {
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+  list-style-type: none;
+  line-height: 20px;
+  display: block;
+}
+/* line 23, ../sass/buttons.scss */
+.button-container:after {
+  -moz-transition: background 0.3s linear;
+  -webkit-transition: background 0.3s linear;
+  -ms-transition: background 0.3s linear;
+  -o-transition: background 0.3s linear;
+  transition: background 0.3s linear;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 6px;
+}
+/* line 39, ../sass/buttons.scss */
+.button-container:hover:after {
+  content: "";
+  background: rgba(0, 0, 0, 0.1);
+}
+/* line 43, ../sass/buttons.scss */
+.button-container:active:after {
+  content: "";
+  -moz-transition: background 0s linear;
+  -webkit-transition: background 0s linear;
+  -ms-transition: background 0s linear;
+  -o-transition: background 0s linear;
+  transition: background 0s linear;
+  -moz-box-shadow: inset 0 0 3px black;
+  -webkit-box-shadow: inset 0 0 3px black;
+  box-shadow: inset 0 0 3px black;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* Supposedly needed for IE10 to work in near future */
+/* line 59, ../sass/buttons.scss */
+.borderimage .bluebutton {
+  -moz-border-image: url(/static/img/BlueButton.png) 10 repeat stretch;
+  -webkit-border-image: url(/static/img/BlueButton.png) 10 repeat stretch;
+  -o-border-image: url(/static/img/BlueButton.png) 10 repeat stretch;
+  border-image: url(/static/img/BlueButton.png) 10 fill repeat stretch;
+}
+
+/* line 66, ../sass/buttons.scss */
+.no-borderimage .bluebutton {
+  background-color: #18a7e6;
+  border-color: #18a7e6;
+}
+
+/* line 71, ../sass/buttons.scss */
+.borderimage .greenbutton {
+  -moz-border-image: url(/static/img/GreenButton.png) 10 repeat stretch;
+  -webkit-border-image: url(/static/img/GreenButton.png) 10 repeat stretch;
+  -o-border-image: url(/static/img/GreenButton.png) 10 repeat stretch;
+  border-image: url(/static/img/GreenButton.png) 10 fill repeat stretch;
+}
+
+/* line 78, ../sass/buttons.scss */
+.no-borderimage .greenbutton {
+  background-color: #56d21d;
+  border-color: #56d21d;
+}
+
+/* line 83, ../sass/buttons.scss */
+.borderimage .greybutton {
+  -moz-border-image: url(/static/img/GreyButton.png) 10 repeat stretch;
+  -webkit-border-image: url(/static/img/GreyButton.png) 10 repeat stretch;
+  -o-border-image: url(/static/img/GreyButton.png) 10 repeat stretch;
+  border-image: url(/static/img/GreyButton.png) 10 fill repeat stretch;
+}
+
+/* line 90, ../sass/buttons.scss */
+.no-borderimage .greybutton {
+  background-color: #9d9d9d;
+  border-color: #9d9d9d;
+}
+
+/* line 95, ../sass/buttons.scss */
+.borderimage .orangebutton {
+  -moz-border-image: url(/static/img/OrangeButton.png) 10 repeat stretch;
+  -webkit-border-image: url(/static/img/OrangeButton.png) 10 repeat stretch;
+  -o-border-image: url(/static/img/OrangeButton.png) 10 repeat stretch;
+  border-image: url(/static/img/OrangeButton.png) 10 fill repeat stretch;
+}
+
+/* line 102, ../sass/buttons.scss */
+.no-borderimage .orangebutton {
+  background-color: #e3870f;
+  border-color: #e3870f;
+}
+
+/* line 2, ../sass/header.scss */
+.contain-to-grid.menu-bar-container {
+  background-color: #525252;
+  z-index: 20;
+  position: relative;
+}
+/* line 7, ../sass/header.scss */
+.contain-to-grid.banner-container {
+  background: url(/static/img/BannerBackground.png) center center no-repeat black;
+  height: 300px;
+}
+
+/* line 13, ../sass/header.scss */
+.top-bar {
+  background-color: #525252;
+  margin: 0px;
+  height: 60px;
+  padding: 10px 15px;
+  min-height: 40px;
+  line-height: 40px;
+}
+
+/* line 22, ../sass/header.scss */
+#header {
+  z-index: 25;
+  position: relative;
+}
+
+/* line 27, ../sass/header.scss */
+#logo {
+  width: 129px;
+  height: 40px;
+  background: url(/static/img/logo_header.png) no-repeat;
+}
+
+/* line 33, ../sass/header.scss */
+.menu-bar {
+  background-color: #525252;
+  height: 60px;
+  padding: 10px 0px;
+  min-height: 40px;
+  line-height: 40px;
+  z-index: 20;
+}
+/* line 34, ../sass/header.scss */
+.menu-bar #sign-in-form {
+  float: left;
+  margin: 0px;
+  position: relative;
+}
+/* line 39, ../sass/header.scss */
+.menu-bar #sign-up-button, .menu-bar #sign-in-button {
+  width: 97px;
+  text-align: center;
+  float: left;
+  display: block;
+  text-align: center;
+  margin-left: 6px;
+}
+/* line 53, ../sass/header.scss */
+.menu-bar .text:hover {
+  background: transparent !important;
+}
+/* line 57, ../sass/header.scss */
+.menu-bar .signin input {
+  display: block;
+  float: left;
+  width: 140px;
+  height: 40px;
+  background-color: #808080;
+  border-radius: 8px;
+  border: 0px;
+  font-weight: bold;
+  margin: 0px;
+}
+/* line 68, ../sass/header.scss */
+.menu-bar .signin .password {
+  margin-left: 10px;
+}
+/* line 72, ../sass/header.scss */
+.menu-bar .logo-container {
+  padding: 0px !important;
+}
+/* line 75, ../sass/header.scss */
+.menu-bar #signin-errors {
+  display: none;
+  position: absolute;
+  top: 50px;
+  z-index: 100;
+}
+/* line 81, ../sass/header.scss */
+.menu-bar .error-container {
+  min-width: 150px;
+  min-height: 40px;
+  background-color: #333333;
+  text-align: center;
+  line-height: 40px;
+  color: #ffffff;
+  padding: 0px 15px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px #555555;
+}
+/* line 92, ../sass/header.scss */
+.menu-bar #user-container, .menu-bar #anon-container {
+  float: left;
+}
+/* line 96, ../sass/header.scss */
+.menu-bar #user-container .logged-avatar {
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+/* line 103, ../sass/header.scss */
+.menu-bar #user-container .logged-username {
+  float: left;
+  background-color: #ebebeb;
+  height: 40px;
+  padding: 0px 12px;
+  min-width: 200px;
+  line-height: 40px;
+  margin-left: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+/* line 114, ../sass/header.scss */
+.menu-bar #user-container #sign-out-button {
+  float: left;
+  width: 97px;
+  text-align: center;
+  margin-left: 4px;
+}
+/* line 120, ../sass/header.scss */
+.menu-bar #user-container #upload-button {
+  line-height: 20px;
+  cursor: pointer;
+  width: 106px;
+  text-align: center;
+  float: left;
+  margin-left: 6px;
+}
+/* line 129, ../sass/header.scss */
+.menu-bar form {
+  margin: 0px;
+}
+/* line 133, ../sass/header.scss */
+.menu-bar #signin-errors:after {
+  content: "";
+  position: absolute;
+  border-bottom: 20px solid #333333;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  top: -10px;
+  left: 10px;
+}
+/* line 142, ../sass/header.scss */
+.menu-bar #signin-errors:before {
+  position: absolute;
+  color: white;
+  top: -35px;
+  left: 10px;
+  background: #333333;
+  padding: 5px 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+/* line 157, ../sass/header.scss */
+#ajaxStateSpinner {
+  display: block;
+  position: relative;
+  float: left;
+  z-index: 10000;
+  width: 24px;
+  height: 40px;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 171, ../sass/header.scss */
+#ajaxStateSpinner.loading {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  background: url(/static/img/spinner-medium.gif) no-repeat center center;
+}
+
+/* line 1, ../sass/footer.scss */
+#footer {
+  padding-bottom: 10px;
+  z-index: 20;
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  background-color: inherit;
+  min-height: 60px;
+}
+/* line 12, ../sass/footer.scss */
+#footer #links {
+  margin: auto;
+}
+/* line 15, ../sass/footer.scss */
+#footer.full {
+  background-color: #fff;
+  height: 63px;
+  position: absolute;
+  bottom: 0px;
+}
+
+/* line 23, ../sass/footer.scss */
+#copyright {
+  padding-bottom: 5px;
+}
+
+/* line 27, ../sass/footer.scss */
+#links {
+  line-height: 18px;
+}
+/* line 29, ../sass/footer.scss */
+#links a {
+  padding: 0px 1px;
+}
+
+/* line 2, ../sass/photo_detail.scss */
+#photo-detail-left {
+  background-color: #ffffff;
+  box-shadow: 2px 0px 6px -2px black;
+  padding-bottom: 15px;
+  z-index: 10;
+  min-height: 800px;
+  height: 100%;
+}
+
+/* line 11, ../sass/photo_detail.scss */
+#photo-container {
+  padding: 0px 15px;
+  text-align: center;
+}
+/* line 14, ../sass/photo_detail.scss */
+#photo-container .photo-wrapper {
+  border: 2px solid #959595;
+  text-align: center;
+  background-color: #333333;
+  width: 100%;
+  max-width: 596px;
+  min-width: 596px;
+  max-height: 604px;
+  position: relative;
+}
+
+/* line 26, ../sass/photo_detail.scss */
+#photo-detail-left .photo {
+  margin: 0px auto;
+  max-height: 600px;
+  max-width: 100%;
+  position: relative;
+  border: 2px solid #959595;
+  background-color: #959595;
+}
+
+/* line 35, ../sass/photo_detail.scss */
+#photo-detail-right {
+  background-color: #d7d7d7;
+  z-index: 5;
+  height: 100%;
+}
+
+/* line 41, ../sass/photo_detail.scss */
+#photo-caption {
+  min-height: 50px;
+  line-height: 26px;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* line 50, ../sass/photo_detail.scss */
+.photo_detail_body {
+  background-color: #bcddeb;
+}
+
+/* line 54, ../sass/photo_detail.scss */
+#comments-icon {
+  background: url(/static/img/comments_icon.png) no-repeat left center;
+  width: 30px;
+  height: 42px;
+  float: left;
+}
+
+/* line 61, ../sass/photo_detail.scss */
+#comment-box {
+  float: left;
+  margin-left: 10px;
+  height: 41px;
+  border-radius: 10px;
+  padding: 5px;
+  width: 345px;
+}
+
+/* line 70, ../sass/photo_detail.scss */
+#comments-container, #comments {
+  padding-top: 10px;
+}
+
+/* line 74, ../sass/photo_detail.scss */
+#add-comment-container {
+  height: 46px;
+  width: 100%;
+  display: none;
+}
+
+/* line 80, ../sass/photo_detail.scss */
+#add-comment-button {
+  display: block;
+  float: right;
+  width: 97px;
+  text-align: center;
+  display: block;
+  text-align: center;
+}
+
+/* line 89, ../sass/photo_detail.scss */
+#likers-container {
+  padding-top: 10px;
+  padding-left: 8px;
+}
+
+/* line 94, ../sass/photo_detail.scss */
+#like-button {
+  display: block;
+  width: 110px;
+  text-align: center;
+  float: left;
+}
+
+/* line 101, ../sass/photo_detail.scss */
+#more-button {
+  width: 69px;
+  float: right;
+  text-align: center;
+}
+
+/* line 107, ../sass/photo_detail.scss */
+#likers-title {
+  text-align: center;
+  font-weight: bold;
+  background-color: #484848;
+  border-radius: 8px;
+  height: 32px;
+  color: #ffffff;
+  line-height: 32px;
+  margin-top: 8px;
+}
+
+/* line 118, ../sass/photo_detail.scss */
+#buttons-container {
+  padding-left: 15px;
+}
+
+/* line 122, ../sass/photo_detail.scss */
+#likers-title-container {
+  padding-left: 15px;
+  padding-top: 2px;
+}
+
+/* line 127, ../sass/photo_detail.scss */
+#likers-content-container {
+  padding-left: 15px;
+  padding-top: 5px;
+}
+/* line 130, ../sass/photo_detail.scss */
+#likers-content-container .liker-avatar {
+  float: left;
+  height: 36px;
+  width: 36px;
+  border-radius: 6px;
+  margin-right: 1px;
+  margin-bottom: 2px;
+}
+
+/* line 140, ../sass/photo_detail.scss */
+.get-app-button {
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 9px;
+  width: 150px;
+}
+
+/* line 148, ../sass/photo_detail.scss */
+#author-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 151, ../sass/photo_detail.scss */
+#author-container .author-avatar {
+  width: 40px;
+  height: 40px;
+  float: left;
+  border-radius: 6px;
+}
+/* line 157, ../sass/photo_detail.scss */
+#author-container .author-name {
+  padding-left: 10px;
+  font-weight: bold;
+  float: left;
+  line-height: 40px;
+  height: 40px;
+}
+
+/* line 166, ../sass/photo_detail.scss */
+#follow-button {
+  display: block;
+  width: 120px;
+  text-align: center;
+  float: right;
+}
+
+/* line 173, ../sass/photo_detail.scss */
+.followers-container .follower-avatar {
+  float: left;
+  height: 38px;
+  width: 38px;
+  border-radius: 6px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+
+/* line 182, ../sass/photo_detail.scss */
+.additional-photo {
+  width: 89px;
+  height: 89px;
+  border-radius: 10px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+
+/* line 191, ../sass/photo_detail.scss */
+.comment-container {
+  padding-bottom: 8px;
+}
+/* line 193, ../sass/photo_detail.scss */
+.comment-container .comment-avatar {
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+}
+/* line 199, ../sass/photo_detail.scss */
+.comment-container .comments-content {
+  float: left;
+  padding-left: 7px;
+  width: 340px;
+}
+/* line 203, ../sass/photo_detail.scss */
+.comment-container .comments-content .author-name {
+  float: left;
+  width: 50%;
+  color: #1880b1;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+}
+/* line 211, ../sass/photo_detail.scss */
+.comment-container .comments-content .comment-time {
+  float: right;
+  width: 30%;
+  font-size: 11px;
+  line-height: 14px;
+  text-align: right;
+}
+/* line 218, ../sass/photo_detail.scss */
+.comment-container .comments-content .comment-body {
+  float: left;
+  width: 100%;
+  padding-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+}
+
+/* line 1, ../sass/home.scss */
+.home-banner {
+  color: #ddd;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 100px;
+  position: relative;
+}
+/* line 7, ../sass/home.scss */
+.home-banner .first {
+  font-size: 40px;
+}
+/* line 10, ../sass/home.scss */
+.home-banner .second {
+  font-size: 40px;
+  font-style: italic;
+}
+
+/* line 16, ../sass/home.scss */
+#join-picmobo-button {
+  width: 180px;
+  position: absolute;
+  left: 535px;
+  top: 65px;
+  display: block;
+}
+/* line 22, ../sass/home.scss */
+#join-picmobo-button .bluebutton {
+  font-size: 18px;
+}
+
+/* line 27, ../sass/home.scss */
+#home-left {
+  min-height: 100%;
+  background-color: #ffffff;
+  box-shadow: 2px 0px 6px -2px black;
+  padding-bottom: 15px;
+  z-index: 21;
+  min-height: 900px;
+  position: relative;
+}
+
+/* line 37, ../sass/home.scss */
+#home-right {
+  background-color: #d7d7d7;
+  z-index: 5;
+}
+/* line 40, ../sass/home.scss */
+#home-right .app-container {
+  padding-top: 20px;
+}
+
+/* line 45, ../sass/home.scss */
+#home-photos-container {
+  padding: 10px 10px;
+  padding-top: 10px;
+}
+
+/* line 1, ../sass/profile.scss */
+#user-profile-left {
+  background-color: #ffffff;
+  box-shadow: 2px 0px 6px -2px black;
+  padding-bottom: 15px;
+  z-index: 21;
+  min-height: 900px;
+  height: 100%;
+}
+
+/* line 10, ../sass/profile.scss */
+#user-profile-right {
+  background-color: #d7d7d7;
+  z-index: 5;
+  height: 100%;
+}
+
+/* line 16, ../sass/profile.scss */
+#profile-photos-container {
+  padding: 10px 10px;
+  padding-top: 10px;
+}
+
+/* line 21, ../sass/profile.scss */
+#userinfo-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+/* line 25, ../sass/profile.scss */
+#userinfo-container .avatar {
+  width: 40px;
+  height: 40px;
+  float: left;
+  border-radius: 6px;
+}
+/* line 31, ../sass/profile.scss */
+#userinfo-container .username {
+  float: left;
+  padding-left: 10px;
+  background-color: #ebebeb;
+  height: 40px;
+  padding: 0px 12px;
+  line-height: 40px;
+  margin-left: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: calc(100% - 40px - 10px);
+  width: -webkit-calc(100% - 40px - 10px);
+  width: -moz-calc(100% - 4px - 10px);
+}
+
+/* line 48, ../sass/profile.scss */
+#edit-profile-button {
+  display: block;
+  float: right;
+  width: 156px;
+  text-align: center;
+}
+
+/* line 55, ../sass/profile.scss */
+#edit-oauth-settings-button {
+  display: block;
+  float: left;
+  width: 97px;
+  text-align: center;
+}
+
+/* line 1, ../sass/flat.scss */
+#flat-page-wrapper {
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  background: #FFFFFF;
+  padding: 20px;
+  margin-bottom: 20px;
+  min-height: 670px;
+  margin-top: 20px;
+}
+/* line 8, ../sass/flat.scss */
+#flat-page-wrapper .title {
+  text-align: left;
+  font-size: 22px;
+  font-weight: bold;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+/* line 16, ../sass/flat.scss */
+#flat-page-wrapper .description {
+  text-align: left;
+}
+/* line 18, ../sass/flat.scss */
+#flat-page-wrapper .description h1, #flat-page-wrapper .description h2 {
+  padding: 8px 0px;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* line 23, ../sass/flat.scss */
+#flat-page-wrapper .description p, #flat-page-wrapper .description li {
+  padding: 5px 0px;
+}
+
+/* line 1, ../sass/oauth_settings.scss */
+#edit-oauth-settings-container {
+  min-height: 800px;
+  background: #ffffff;
+  padding: 20px 20px;
+}
+/* line 5, ../sass/oauth_settings.scss */
+#edit-oauth-settings-container .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* line 11, ../sass/oauth_settings.scss */
+.oauth-row {
+  padding: 20px 0px;
+}
+/* line 13, ../sass/oauth_settings.scss */
+.oauth-row .oauth-title {
+  float: left;
+  padding-left: 10px;
+  line-height: 60px;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* line 20, ../sass/oauth_settings.scss */
+.oauth-row .oauth-icon {
+  float: left;
+  width: 60px;
+  height: 60px;
+}
+
+/* line 27, ../sass/oauth_settings.scss */
+.configure-button {
+  display: block;
+  float: right;
+  width: 156px;
+  text-align: center;
+  margin-top: 10px;
+}
+/* line 33, ../sass/oauth_settings.scss */
+.configure-button.hidden {
+  display: none;
+}
+
+/* line 38, ../sass/oauth_settings.scss */
+.oauth-row .configured-status {
+  float: right;
+  height: 60px;
+  line-height: 60px;
+  margin-right: 10px;
+}
+
+/* line 45, ../sass/oauth_settings.scss */
+#oauth-settings-done-button {
+  display: block;
+  float: left;
+  width: 156px;
+  text-align: center;
+}
+
+/* line 52, ../sass/oauth_settings.scss */
+#oauth-reload-link {
+  display: none;
+}
+
+/* line 56, ../sass/oauth_settings.scss */
+.oauth_callback_body {
+  text-align: center;
+}
+
+/* line 1, ../sass/edit_profile.scss */
+#edit-user-profile-container {
+  min-height: 800px;
+  background: #ffffff;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+/* line 8, ../sass/edit_profile.scss */
+#edit-profile-form {
+  padding-top: 20px;
+}
+
+/* line 12, ../sass/edit_profile.scss */
+#edit-user-profile-container input {
+  float: left;
+  display: block;
+  height: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid silver;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+/* line 23, ../sass/edit_profile.scss */
+#edit-profile-back-button {
+  float: left;
+  margin: auto;
+  width: 97px;
+  text-align: center;
+}
+
+/* line 30, ../sass/edit_profile.scss */
+#edit-profile-save-button {
+  float: left;
+  margin: auto;
+  width: 97px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+/* line 39, ../sass/edit_profile.scss */
+#edit-user-profile-container .error-row {
+  height: 20px;
+}
+/* line 42, ../sass/edit_profile.scss */
+#edit-user-profile-container .title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+/* line 50, ../sass/edit_profile.scss */
+#edit-profile-avatar-container {
+  width: 156px;
+  height: 156px;
+  margin: auto;
+}
+
+/* line 56, ../sass/edit_profile.scss */
+#edit-profile-avatar {
+  border: 1px solid silver;
+  padding: 5px;
+  border-radius: 8px;
+  max-width: 146px;
+  max-height: 146px;
+  width: 146px;
+  height: 146px;
+}
+
+/* line 2, ../sass/more_overlay.scss */
+#more-button-helper {
+  display: none;
+}
+
+/* line 6, ../sass/more_overlay.scss */
+#more-overlay-owner {
+  background-color: transparent;
+  min-width: 200px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* line 14, ../sass/more_overlay.scss */
+.more-overlay .title {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+/* line 18, ../sass/more_overlay.scss */
+.more-overlay .button-container {
+  margin-bottom: 10px;
+}
+/* line 20, ../sass/more_overlay.scss */
+.more-overlay .button-container.last {
+  margin-bottom: 0px;
+}
+
+/* line 26, ../sass/more_overlay.scss */
+#more-overlay, #flag-photo-overlay {
+  background-color: transparent;
+  min-width: 200px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* line 33, ../sass/more_overlay.scss */
+#flag-done-button {
+  width: 100px;
+  margin: 0px auto;
+}
+
+/* line 39, ../sass/more_overlay.scss */
+#flag-photo-overlay .title {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+/* line 43, ../sass/more_overlay.scss */
+#flag-photo-overlay input {
+  height: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid silver;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-bottom: 10px;
+}
+
+/* line 54, ../sass/more_overlay.scss */
+#delete-photo-overlay, #set-photo-private-overlay, #set-photo-public-overlay {
+  background-color: transparent;
+  min-width: 200px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+}
+
+/* line 2, ../sass/auth_overlays.scss */
+#signin-overlay {
+  width: 500px;
+  padding: 30px;
+  text-align: center;
+}
+/* line 6, ../sass/auth_overlays.scss */
+#signin-overlay form {
+  padding-top: 20px;
+}
+/* line 9, ../sass/auth_overlays.scss */
+#signin-overlay #signin-overlay-cancel-button {
+  float: left;
+  margin: auto;
+  width: 97px;
+  text-align: center;
+  display: block;
+}
+/* line 16, ../sass/auth_overlays.scss */
+#signin-overlay #signin-overlay-done-button {
+  float: left;
+  margin: auto;
+  width: 97px;
+  text-align: center;
+  display: block;
+  margin-left: 4px;
+}
+
+/* line 26, ../sass/auth_overlays.scss */
+#signup-overlay {
+  width: 500px;
+  min-height: 400px;
+  padding: 30px;
+  text-align: center;
+}
+
+/* line 34, ../sass/auth_overlays.scss */
+.signup-overlay .title {
+  color: #3b3b3b;
+  font-size: 36px;
+  text-align: center;
+}
+/* line 39, ../sass/auth_overlays.scss */
+.signup-overlay .subtitle {
+  color: #898989;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 10px;
+}
+/* line 45, ../sass/auth_overlays.scss */
+.signup-overlay .small-subtitle {
+  color: #898989;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* line 53, ../sass/auth_overlays.scss */
+#signup-form-main, #signup-form-additional {
+  padding-top: 30px;
+}
+
+/* line 58, ../sass/auth_overlays.scss */
+.signup-overlay .form-row {
+  padding-left: 50px;
+  padding-bottom: 5px;
+}
+/* line 62, ../sass/auth_overlays.scss */
+.signup-overlay .error-row {
+  padding-left: 50px;
+  height: 20px;
+  line-height: 15px;
+  font-size: 13px;
+  display: none;
+  text-align: left;
+  padding-bottom: 5px;
+}
+/* line 71, ../sass/auth_overlays.scss */
+.signup-overlay input {
+  float: left;
+  display: block;
+  width: 230px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid silver;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+/* line 82, ../sass/auth_overlays.scss */
+.signup-overlay .complete {
+  background: url(/static/img/complete_icon.png) no-repeat left center !important;
+  color: transparent !important;
+}
+/* line 86, ../sass/auth_overlays.scss */
+.signup-overlay .required {
+  float: left;
+  height: 40px;
+  width: 140px;
+  background: url(/static/img/required_icon.png) no-repeat left center;
+  line-height: 40px;
+  margin-left: 10px;
+  color: #818181;
+  font-weight: bold;
+  text-indent: 40px;
+  text-align: left;
+}
+/* line 98, ../sass/auth_overlays.scss */
+.signup-overlay .button-wrapper {
+  margin: auto;
+  height: 46px;
+  width: 198px;
+}
+/* line 103, ../sass/auth_overlays.scss */
+.signup-overlay #signup-next-button {
+  float: left;
+  margin: auto;
+  width: 97px;
+  text-align: center;
+  display: block;
+  margin-left: 4px;
+}
+/* line 111, ../sass/auth_overlays.scss */
+.signup-overlay #signup-cancel-button {
+  float: left;
+  margin: auto;
+  width: 97px;
+  text-align: center;
+  display: block;
+}
+
+/* line 120, ../sass/auth_overlays.scss */
+#signup-additional-overlay {
+  width: 500px;
+  min-height: 500px;
+  padding: 30px;
+  text-align: center;
+}
+/* line 121, ../sass/auth_overlays.scss */
+#signup-additional-overlay .button-wrapper {
+  margin: auto;
+  height: 46px;
+  width: 97px;
+}
+/* line 126, ../sass/auth_overlays.scss */
+#signup-additional-overlay input {
+  width: 300px;
+}
+/* line 129, ../sass/auth_overlays.scss */
+#signup-additional-overlay .required {
+  width: 40px;
+}
+/* line 132, ../sass/auth_overlays.scss */
+#signup-additional-overlay #signup-additional-cancel-button {
+  width: 97px;
+  text-align: center;
+  display: block;
+  color: #ffffff;
+  font-weight: bold;
+}
+/* line 139, ../sass/auth_overlays.scss */
+#signup-additional-overlay #signup-additional-done-button {
+  margin: 0px auto;
+  background-color: transparent;
+  width: 97px;
+  text-align: center;
+  display: block;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* line 154, ../sass/auth_overlays.scss */
+#signup-avatar-container {
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+/* line 157, ../sass/auth_overlays.scss */
+#signup-avatar-container .required {
+  height: 156px;
+}
+
+/* line 162, ../sass/auth_overlays.scss */
+#signup-avatar-wrapper {
+  float: left;
+  width: 300px;
+}
+
+/* line 167, ../sass/auth_overlays.scss */
+#signup-avatar {
+  border: 1px solid silver;
+  padding: 5px;
+  border-radius: 8px;
+  max-width: 146px;
+  max-height: 146px;
+}
+
+/* line 2, ../sass/upload.scss */
+#upload-overlay {
+  width: 500px;
+  min-height: 450px;
+  padding: 30px;
+  text-align: center;
+}
+
+/* line 9, ../sass/upload.scss */
+#upload-preview-image {
+  max-height: 100%;
+  max-width: 100%;
+  border: 1px solid black;
+}
+
+/* line 15, ../sass/upload.scss */
+#upload-image-container {
+  height: 290px;
+  padding: 10px;
+}
+
+/* line 20, ../sass/upload.scss */
+#upload-cancel-button {
+  float: left;
+  margin: auto;
+  width: 97px;
+  text-align: center;
+  display: block;
+}
+
+/* line 28, ../sass/upload.scss */
+#upload-start-button {
+  float: left;
+  margin: auto;
+  width: 97px;
+  text-align: center;
+  display: block;
+  margin-left: 4px;
+}
+
+/* line 37, ../sass/upload.scss */
+#upload-buttons-container {
+  width: 198px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+/* line 43, ../sass/upload.scss */
+#upload-caption {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid silver;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+/* line 55, ../sass/upload.scss */
+#upload-container {
+  float: left;
+  height: 40px;
+  width: 160px;
+  background-color: #d9d9d9;
+  border-radius: 6px;
+  margin-right: 15px;
+  padding: 2px 6px;
+  display: none;
+}
+/* line 64, ../sass/upload.scss */
+#upload-container.complete:hover {
+  background-color: #41baeb;
+}
+
+/* line 69, ../sass/upload.scss */
+#file_upload {
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+
+/* line 75, ../sass/upload.scss */
+#upload-input {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  cursor: pointer;
+  line-height: 36px;
+}
+
+/* line 87, ../sass/upload.scss */
+#upload-thumbnail {
+  float: left;
+  height: 36px;
+  width: 36px;
+  background: #ffffff;
+  border: 0px;
+}
+
+/* line 95, ../sass/upload.scss */
+#progress-indicator-wrapper {
+  height: 20px;
+  width: 100%;
+}
+
+/* line 100, ../sass/upload.scss */
+#upload-progress-text {
+  width: 100%;
+  height: 18px;
+  line-height: 17px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* line 109, ../sass/upload.scss */
+#upload-complete-text {
+  height: 36px;
+  line-height: 18px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  display: none;
+}
+
+/* line 118, ../sass/upload.scss */
+#upload-progress-indicator-container {
+  height: 20px;
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 3px;
+  box-shadow: 1px 1px 1px rgba(34, 25, 25, 0.4);
+}
+
+/* line 127, ../sass/upload.scss */
+#upload-progress-indicator {
+  width: 0%;
+  background-color: #ffffff;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px rgba(34, 25, 25, 0.4);
+}
+
+/* line 135, ../sass/upload.scss */
+#upload-share-container {
+  text-align: center;
+  padding-top: 10px;
+}
+/* line 138, ../sass/upload.scss */
+#upload-share-container .help-text {
+  float: left;
+  height: 22px;
+  line-height: 22px;
+  text-align: left;
+  font-size: 10px;
+}
+/* line 145, ../sass/upload.scss */
+#upload-share-container .center {
+  width: 300px;
+}
+
+/* line 150, ../sass/upload.scss */
+.oauth-toggle {
+  float: left;
+  background: url(/static/img/ShareBackgroundDisabled.png) no-repeat;
+  width: 44px;
+  height: 22px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+/* line 157, ../sass/upload.scss */
+.oauth-toggle.selected {
+  background: url(/static/img/ShareBackgroundEnabled.png) no-repeat;
+  width: 44px;
+  height: 22px;
+}
+
+/* line 164, ../sass/upload.scss */
+#upload-facebook-oauth .provider-icon {
+  background: url(/static/img/ShareFacebook.png) no-repeat;
+  width: 22px;
+  height: 22px;
+}
+
+/* line 170, ../sass/upload.scss */
+#upload-twitter-oauth .provider-icon {
+  background: url(/static/img/ShareTwitter.png) no-repeat;
+  width: 22px;
+  height: 22px;
+}
+
+/* line 176, ../sass/upload.scss */
+#upload-tumblr-oauth .provider-icon {
+  background: url(/static/img/ShareTumblr.png) no-repeat;
+  width: 22px;
+  height: 22px;
+}
+
+/* line 182, ../sass/upload.scss */
+#upload-foursquare-oauth .provider-icon {
+  background: url(/static/img/ShareFoursquare.png) no-repeat;
+  width: 22px;
+  height: 22px;
+}
+
+/* line 1, ../sass/admin.scss */
+#admin-menu {
+  position: absolute;
+  z-index: 100;
+}
+/* line 4, ../sass/admin.scss */
+#admin-menu .td {
+  font-size: 22px;
+}
+
+/* line 9, ../sass/admin.scss */
+#admin-title {
+  background-color: #FFFFCC;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}

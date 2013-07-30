@@ -1,0 +1,38 @@
+/* line 1, ../sass/footer.scss */
+#footer {
+  padding-bottom: 10px;
+  z-index: 20;
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  background-color: inherit;
+  min-height: 60px;
+}
+/* line 12, ../sass/footer.scss */
+#footer #links {
+  margin: auto;
+}
+/* line 15, ../sass/footer.scss */
+#footer.full {
+  background-color: #fff;
+  height: 63px;
+  position: absolute;
+  bottom: 0px;
+}
+
+/* line 23, ../sass/footer.scss */
+#copyright {
+  padding-bottom: 5px;
+}
+
+/* line 27, ../sass/footer.scss */
+#links {
+  line-height: 18px;
+}
+/* line 29, ../sass/footer.scss */
+#links a {
+  padding: 0px 1px;
+}

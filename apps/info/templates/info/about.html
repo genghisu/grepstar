@@ -1,0 +1,37 @@
+{% extends "standard_header_template.html" %}
+{% load ajax %}
+
+{% block content_header %}
+    <h2>About</h2>
+{% endblock %}
+
+{% block main_content %}
+   <div class='content_wrapper info_wrapper'>
+        <div class='content'>
+          <p>Django360 is a knowledge sharing site dedicated to the users of the <a href='http://www.djangoproject.com/'>Django web framework.</a></p>
+          <p>On Django360, you can ask <a href='{% url qa-main %}'>questions</a>, check out the latest <a href='{% url code-main %}'>code snippets</a>, 
+          find out about the many <a href='{% url applications-main %}'>reusable apps</a> available and read up on <a href='{% url tutorials-main %}'>tutorials</a> 
+          to broaden your knowledge.</p>
+          <p>Everything on the site is community moderated and driven by a reputation system.  Useful content will be voted up, while
+          bad content will be flagged/downvoted and removed from the site.</p>
+          <p>All content are categorized via tags and there is a full text search available at the top of the page, so you can easily
+          find content that fit your needs.</p>
+          <p>Django360 is built using <a href='http://www.djangoproject.com/'>the Django web framework</a>.</p>
+          <p>Some icons on this site come from <a href='http://www.famfamfam.com/lab/icons/silk/'>FamFamFam</a>.</p>
+          <p>Other icons on this site come from <a href='http://taytel.deviantart.com/'>Orb</a>.</p>
+          <p>Django360 uses the following open source apps: </p>
+          <p><a href='http://south.aeracode.org/'>South</a></p> 
+          <p><a href='http://code.google.com/p/django-tagging/'>django-tagging</a></p>
+          <p><a href='http://code.google.com/p/django-command-extensions/'>django-extensions</a></p>
+          <p><a href='http://code.google.com/p/django-gravatar/'>django-gravatar</a></p>
+          <p><a href='http://code.google.com/p/django-reputation/'>django-reputation</a></p>
+          <p><a href='http://github.com/toastdriven/django-haystack'>django-haystack</a></p>
+          <p><a href='http://code.google.com/p/django-openid-consumer/'>django-openidconsumer</a></p>
+          <p><a href='http://code.google.com/p/django-moderation/'>django-moderation</a></p>
+          <p><a href='http://code.google.com/p/django-relatedcontent/'>django-relatedcontent</a></p>
+          <p><a href='http://code.google.com/p/django-contenthistory/'>django-contenthistory</a></p>
+          <p><a href='http://code.google.com/p/django-userhistory/'>django-userhistory</a></p>
+          <p><a href='http://code.google.com/p/django-community-badges/'>django-community-badges</a></p>.
+        </div>
+    </div>
+{% endblock %}

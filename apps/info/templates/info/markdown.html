@@ -1,0 +1,112 @@
+{% extends "standard_header_template.html" %}
+{% load ajax %}
+
+{% block content_header %}
+    <a href='http://daringfireball.net/projects/markdown/syntax'><h2>Markdown</h2></a>
+{% endblock %}
+
+{% block main_content %}
+   <div class='content_wrapper info_wrapper'>
+        <div class='content'>
+          <h1>Markdown</h1>
+          <p>Markdown’s syntax is intended for one purpose: to be used as a format for writing for the web.
+
+          <p>Markdown is not a replacement for HTML, or even close to it. Its syntax is very small, corresponding only to a very small subset of HTML tags. The idea is not to create a syntax that makes it easier to insert HTML tags. In my opinion, HTML tags are already easy to insert. The idea for Markdown is to make it easy to read, write, and edit prose. HTML is a publishing format; Markdown is a writing format. Thus, Markdown’s formatting syntax only addresses issues that can be conveyed in plain text.</p>
+          </p>
+          <h1>Code and Preformatted Text</h1>
+          <p>
+            Pre-formatted code blocks are used for writing about programming or markup source code. Rather than forming normal paragraphs, the lines of a code block are interpreted literally. Markdown wraps a code block in both &lt;pre&gt; and &lt;code&gt; tags.
+          </p>
+          <p>
+            To produce a code block in Markdown, simply indent every line of the block by at least 4 spaces or 1 tab. For example, given this input:
+          </p>
+          <p>
+            All code will be highlighted assuming it is Python code which should cover 95% of cases since this is a Django related site.
+          </p>
+          <p>
+          <pre><code><div class="highlight"><span class="kn">import</span> <span class="nn">django.http</span> <span class="kn">as</span> <span class="nn">http</span>
+
+<span class="kn">import</span> <span class="nn">django.shortcuts</span> <span class="kn">as</span> <span class="nn">shortcuts</span>
+<span class="kn">from</span> <span class="nn">django.template</span> <span class="kn">import</span> <span class="n">RequestContext</span>
+<span class="kn">from</span> <span class="nn">django.core.exceptions</span> <span class="kn">import</span> <span class="n">ObjectDoesNotExist</span>
+
+<span class="kn">from</span> <span class="nn">django.contrib.contenttypes.models</span> <span class="kn">import</span> <span class="n">ContentType</span>
+<span class="kn">from</span> <span class="nn">django.contrib.contenttypes</span> <span class="kn">import</span> <span class="n">generic</span>
+<span class="kn">from</span> <span class="nn">django.shortcuts</span> <span class="kn">import</span> <span class="n">get</span><span class="o">_</span><span class="c">object_or_404</span>
+
+<span class="kn">from</span> <span class="nn">django.core.urlresolvers</span> <span class="kn">import</span> <span class="n">reverse</span>
+</div>
+</code></pre>
+          </p>
+          <h1>Code Spans</h1>
+          <p>Use backticks to create an inline code span:</p>
+          <p><code>QuestionForm = type('QuestionForm',  (DivForm, ),  base_fields)</code></p>
+          <h1>Inline HTML</h1>
+          <p>For any markup that is not covered by Markdown’s syntax, you simply use HTML itself. There’s no need to preface it or delimit it to indicate that you’re switching from Markdown to HTML; you just use the tags.</p>
+          <p>Django360 supports a <a href='{% url info-htmltags %}'>limited number of html tags</a>.  Tags not in this list will be stripped.</p>
+          <h1>Italics and Bold</h1>
+          <p>Markdown treats asterisks (*) as the indictaor of emphasis. Text wrapped with one * will be wrapped with an HTML 
+&lt;em&gt;  tag; double *’s will be wrapped with an HTML &lt;strong&gt; tag. E.g., this input:</p>
+          <p>*single asterisks*
+            <br/>
+            **double asterisks**
+          </p>
+          <p>Due the the proliferation of underscore usage in Python code, underscores(_) have been restricted from being used as
+          emphasis indictators.</p>
+          <h1>Headers</h1>
+          <p>Markdown supports two styles of headers, Setext and atx.
+
+Setext-style headers are “underlined” using equal signs (for first-level headers) and dashes (for second-level headers). For example:</p>
+<p><pre><code>This is an H1<br/>
+=============
+<br/><br/>
+This is an H2<br/>
+-------------</code></pre>
+</p>
+    <h1>Lists</h1>
+    <p>Markdown supports ordered (numbered) and unordered (bulleted) lists.</p>
+
+<p>Unordered lists use asterisks, pluses, and hyphens &#8212; interchangably
+&#8212; as list markers:</p>
+
+<pre><code>*   Red
+*   Green
+*   Blue
+</code></pre>
+
+<p>is equivalent to:</p>
+
+<pre><code>+   Red
++   Green
++   Blue
+</code></pre>
+
+<p>and:</p>
+
+<pre><code>-   Red
+-   Green
+-   Blue
+</code></pre>
+
+<p>Ordered lists use numbers followed by periods:</p>
+
+<pre><code>1.  Bird
+2.  McHale
+3.  Parish
+</code></pre>
+
+<p>It&#8217;s important to note that the actual numbers you use to mark the
+list have no effect on the HTML output Markdown produces. The HTML
+Markdown produces from the above list is:</p>
+
+<pre><code>&lt;ol&gt;
+&lt;li&gt;Bird&lt;/li&gt;
+&lt;li&gt;McHale&lt;/li&gt;
+&lt;li&gt;Parish&lt;/li&gt;
+
+&lt;/ol&gt;
+</code></pre>
+
+        </div>
+    </div>
+{% endblock %}

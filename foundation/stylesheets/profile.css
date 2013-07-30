@@ -1,0 +1,68 @@
+/* line 1, ../sass/profile.scss */
+#user-profile-left {
+  background-color: #ffffff;
+  box-shadow: 2px 0px 6px -2px black;
+  padding-bottom: 15px;
+  z-index: 21;
+  min-height: 900px;
+  height: 100%;
+}
+
+/* line 10, ../sass/profile.scss */
+#user-profile-right {
+  background-color: #d7d7d7;
+  z-index: 5;
+  height: 100%;
+}
+
+/* line 16, ../sass/profile.scss */
+#profile-photos-container {
+  padding: 10px 10px;
+  padding-top: 10px;
+}
+
+/* line 21, ../sass/profile.scss */
+#userinfo-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+/* line 25, ../sass/profile.scss */
+#userinfo-container .avatar {
+  width: 40px;
+  height: 40px;
+  float: left;
+  border-radius: 6px;
+}
+/* line 31, ../sass/profile.scss */
+#userinfo-container .username {
+  float: left;
+  padding-left: 10px;
+  background-color: #ebebeb;
+  height: 40px;
+  padding: 0px 12px;
+  line-height: 40px;
+  margin-left: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: calc(100% - 40px - 10px);
+  width: -webkit-calc(100% - 40px - 10px);
+  width: -moz-calc(100% - 4px - 10px);
+}
+
+/* line 48, ../sass/profile.scss */
+#edit-profile-button {
+  display: block;
+  float: right;
+  width: 156px;
+  text-align: center;
+}
+
+/* line 55, ../sass/profile.scss */
+#edit-oauth-settings-button {
+  display: block;
+  float: left;
+  width: 97px;
+  text-align: center;
+}

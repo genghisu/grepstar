@@ -1,0 +1,57 @@
+/* line 1, ../sass/home.scss */
+.home-banner {
+  color: #ddd;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 100px;
+  position: relative;
+}
+/* line 7, ../sass/home.scss */
+.home-banner .first {
+  font-size: 40px;
+}
+/* line 10, ../sass/home.scss */
+.home-banner .second {
+  font-size: 40px;
+  font-style: italic;
+}
+
+/* line 16, ../sass/home.scss */
+#join-picmobo-button {
+  width: 180px;
+  position: absolute;
+  left: 535px;
+  top: 65px;
+  display: block;
+}
+/* line 22, ../sass/home.scss */
+#join-picmobo-button .bluebutton {
+  font-size: 18px;
+}
+
+/* line 27, ../sass/home.scss */
+#home-left {
+  min-height: 100%;
+  background-color: #ffffff;
+  box-shadow: 2px 0px 6px -2px black;
+  padding-bottom: 15px;
+  z-index: 21;
+  min-height: 900px;
+  position: relative;
+}
+
+/* line 37, ../sass/home.scss */
+#home-right {
+  background-color: #d7d7d7;
+  z-index: 5;
+}
+/* line 40, ../sass/home.scss */
+#home-right .app-container {
+  padding-top: 20px;
+}
+
+/* line 45, ../sass/home.scss */
+#home-photos-container {
+  padding: 10px 10px;
+  padding-top: 10px;
+}

@@ -1,0 +1,52 @@
+/* line 1, ../../foundation/sass/site.scss */
+html {
+  padding: 0px;
+  height: 100%;
+  font-family: "Quando", serif;
+}
+
+/* line 7, ../../foundation/sass/site.scss */
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  font-family: "Quando", serif;
+  background-color: #f5f5f5;
+}
+
+/* line 16, ../../foundation/sass/site.scss */
+.clear {
+  clear: both;
+}
+
+/* line 20, ../../foundation/sass/site.scss */
+.divider {
+  height: 10px;
+}
+
+/* line 24, ../../foundation/sass/site.scss */
+.hidden {
+  display: none;
+}
+
+/* line 28, ../../foundation/sass/site.scss */
+.row {
+  min-width: 1000px;
+  width: 1000px;
+  max-width: 1000px;
+}
+
+/* line 34, ../../foundation/sass/site.scss */
+.center {
+  margin: 0px auto;
+}
+
+/* line 38, ../../foundation/sass/site.scss */
+.small-font {
+  font-size: 11px !important;
+}
+
+/* line 42, ../../foundation/sass/site.scss */
+div:focus {
+  outline: none;
+}

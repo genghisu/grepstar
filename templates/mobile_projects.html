@@ -1,0 +1,112 @@
+{% extends "site_base.html" %}
+
+{% block body_class %}home{% endblock %}
+{% block content_class %}{% endblock %}
+{% block title %}Han Xu{% endblock %}
+
+{% block script %}
+{% endblock %}
+  	
+{% block body %}
+		{% include "header.html" %}
+		<div id='content'>
+			<h4>Primary/Lead Role</h4>
+			<ul id='mobile-projects' class='row mobile-projects'>
+				<li id='labels-project'>
+					<img src='/static/img/labels_icon.jpg'>
+					<div class='description'>
+						<section class='title'>
+							Labels
+						</section>
+						<section class='subtitle'>
+							This app let's users add labels of various shapes, colors and sizes to decorate their favorite photos.  The underlying code involves heavy use
+							of CoreGraphics to handle the drawing of the various labels and the custom fonts associated with each label.  A sophisticated layer of touch
+							event handling allows labels to be added, moved and edited with ease.
+						</section>
+					</div>
+				</li>
+				<li id='picmobo-project'>
+					<img src='/static/img/picmobo_icon.png'>
+					<div class='description'>
+						<section class='title'>
+							Picmobo SDK
+						</section>
+						<section class='subtitle'>
+							This software package is a drop in SDK which augments the functionality of existing photography apps by seemlessly integrating sharing functionality,
+							cloud storage and social features. Picmobo aims to simplify the photo
+							sharing experience of users in the same way that GameCenter and OpenFeint do for mobile games.
+						</section>
+					</div>
+				</li>
+				<li id='paintbooth-project'>
+					<img src='/static/img/paintbooth_icon.jpg'>
+					<div class='description'>
+						<section class='title'>
+							Paintbooth
+						</section>
+						<section class='subtitle'>
+							 Paint Booth, the fun and easy to use app that instantly
+transforms your photos into amazingly realistic paintings!
+Amaze your friends and family with your newly found artistic skills by
+transforming ordinary photos into professional works of art.
+						</section>
+					</div>
+				</li>
+				<li id='lottery-project'>
+					<img src='/static/img/lottery_icon.jpg'>
+					<div class='description'>
+						<section class='title'>
+							Lottery+
+						</section>
+						<section class='subtitle'>
+							 Lottery+ is your free all in one solution for keeping tabs on your lottery picks!
+Love playing the lottery, but tired of tracking all your tickets and following nightly drawings? Want an easier way to find out if you've won? Check out Lottery+.
+						</section>
+					</div>
+				</li>
+			</ul>
+			<h4>Secondary/Supporting Role</h4>
+			<ul id='secondary-mobile-projects' class='row mobile-projects'>
+				<li id='tf2-project'>
+					<img src='/static/img/tf2_icon.jpg' width=128 height=128 >
+					<div class='description'>
+						<section class='title'>
+							TF2 Backpack
+						</section>
+						<section class='subtitle'>
+							 <p>A simple, uber-fast backpack viewer for Team Fortress 2.</p>
+							 <p>I was responsible for integrating the app with Steam via OpenID authentication.</p>
+						</section>
+					</div>
+				</li>
+				<li id='camwow-project'>
+					<img src='/static/img/camwow_icon.jpg'>
+					<div class='description'>
+						<section class='title'>
+							CamWow
+						</section>
+						<section class='subtitle'>
+							 <p>Distort, fatten, pinch, and stylize your camera with real-time filters just like Photo Booth!
+See effects applied LIVE before you take your photo!</p>
+							 <p>I was responsible for developing and integrating the backend SDK for CamWow which enables sharing, cloud storage and social features.</p>
+						</section>
+					</div>
+				</li>
+				<li id='camwow-retro-project'>
+					<img src='/static/img/camwow_retro.jpg'>
+					<div class='description'>
+						<section class='title'>
+							CamWow Retro
+						</section>
+						<section class='subtitle'>
+							 <p>Take your iPhone, iPod, or iPad camera into the past with some of the most beautiful and unique vintage effects. Come see filters fine-tuned to perfection and inspired by old-school analog photography.</p>
+							 <p>I was responsible for developing and integrating the backend SDK for CamWow Retro which enables sharing, cloud storage and social features.</p>
+						</section>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div id='footer'>
+			{% include "footer.html" %}
+		</div>
+{% endblock %}

@@ -1,0 +1,71 @@
+/* line 1, ../sass/edit_profile.scss */
+#edit-user-profile-container {
+  min-height: 800px;
+  background: #ffffff;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+/* line 8, ../sass/edit_profile.scss */
+#edit-profile-form {
+  padding-top: 20px;
+}
+
+/* line 12, ../sass/edit_profile.scss */
+#edit-user-profile-container input {
+  float: left;
+  display: block;
+  height: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid silver;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+/* line 23, ../sass/edit_profile.scss */
+#edit-profile-back-button {
+  float: left;
+  margin: auto;
+  width: 97px;
+  text-align: center;
+}
+
+/* line 30, ../sass/edit_profile.scss */
+#edit-profile-save-button {
+  float: left;
+  margin: auto;
+  width: 97px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+/* line 39, ../sass/edit_profile.scss */
+#edit-user-profile-container .error-row {
+  height: 20px;
+}
+/* line 42, ../sass/edit_profile.scss */
+#edit-user-profile-container .title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+/* line 50, ../sass/edit_profile.scss */
+#edit-profile-avatar-container {
+  width: 156px;
+  height: 156px;
+  margin: auto;
+}
+
+/* line 56, ../sass/edit_profile.scss */
+#edit-profile-avatar {
+  border: 1px solid silver;
+  padding: 5px;
+  border-radius: 8px;
+  max-width: 146px;
+  max-height: 146px;
+  width: 146px;
+  height: 146px;
+}

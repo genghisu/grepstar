@@ -1,0 +1,136 @@
+/* line 1, ../../foundation/sass/home.scss */
+#web-projects {
+  padding-top: 30px;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+/* line 5, ../../foundation/sass/home.scss */
+#web-projects li {
+  cursor: pointer;
+  display: block;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 20px 20px 10px 20px;
+  margin: 0px auto;
+  width: 840px;
+  margin-bottom: 20px;
+}
+/* line 16, ../../foundation/sass/home.scss */
+#web-projects li figure {
+  width: 800px;
+  height: 300px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7) inset;
+}
+/* line 22, ../../foundation/sass/home.scss */
+#web-projects li figcaption {
+  font-size: 18px;
+  color: #444444;
+  padding-top: 10px;
+}
+/* line 29, ../../foundation/sass/home.scss */
+#web-projects #picmobo-project figure {
+  background: url(/static/img/picmobo_sample.png) no-repeat;
+}
+/* line 33, ../../foundation/sass/home.scss */
+#web-projects #wisertogether-project figure {
+  background: url(/static/img/wisertogether_sample.png) no-repeat;
+}
+/* line 37, ../../foundation/sass/home.scss */
+#web-projects #nationalgeographic-project figure {
+  background: url(/static/img/national_geographic.png) no-repeat;
+}
+/* line 41, ../../foundation/sass/home.scss */
+#web-projects #scratch-project figure {
+  background: url(/static/img/scratch_sample.png) no-repeat;
+}
+
+/* line 46, ../../foundation/sass/home.scss */
+#content {
+  min-height: 300px;
+}
+
+/* line 50, ../../foundation/sass/home.scss */
+#content h4 {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+/* line 57, ../../foundation/sass/home.scss */
+#contact {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+/* line 68, ../../foundation/sass/home.scss */
+.mobile-projects {
+  padding-top: 10px;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
+}
+/* line 73, ../../foundation/sass/home.scss */
+.mobile-projects li {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  text-align: left;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 0px auto;
+  width: 840px;
+  margin-bottom: 20px;
+  -webkit-box-orient: inline-axis;
+  -moz-box-orient: inline-axis;
+  box-orient: inline-axis;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  box-align: start;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+}
+/* line 101, ../../foundation/sass/home.scss */
+.mobile-projects li img {
+  width: 128px;
+  height: 128px;
+  border-radius: 16px;
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0;
+}
+/* line 111, ../../foundation/sass/home.scss */
+.mobile-projects li .description {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  height: 128px;
+  padding-left: 20px;
+}
+/* line 119, ../../foundation/sass/home.scss */
+.mobile-projects li .description .title {
+  font-size: 22px;
+}
+/* line 123, ../../foundation/sass/home.scss */
+.mobile-projects li .description .subtitle {
+  font-size: 16px;
+}
+
+/* line 130, ../../foundation/sass/home.scss */
+section.error {
+  margin-top: 30px;
+  display: block;
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}

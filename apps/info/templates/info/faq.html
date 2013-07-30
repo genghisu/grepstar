@@ -1,0 +1,33 @@
+{% extends "standard_header_template.html" %}
+{% load ajax %}
+
+{% block content_header %}
+    <h2>FAQ</h2>
+{% endblock %}
+
+{% block main_content %}
+   <div class='content_wrapper info_wrapper'>
+        <div class='content'>
+            <h1>How can this site help me?</h1>
+            <p>Django360 is a full featured knowledge sharing site dedicated to the helping people find answers
+            to their Django related questions.  If you got a question, check out the tutorials, code snippets and
+            apps to see if someone has already thought of a solution.  If not, ask a question and get it answered
+            by our knowledgeable community.</p>
+            <h1>What features does this site have?</h1>
+            <p>On Django360, you can ask and answer questions.  We also let users submit Django apps, code snippets
+            and Django related tutorials.  Everything is peer moderated through voting and flagging of content.</p>
+            <h1>What kind of content should be post here?</h1>
+            <p>You should submit Django related content.  Questions concerning all aspects of Django development are welcome.
+            Please submit high quality apps and code snippets.  </p>
+            <h1>What kind of content should not be posted here?</h1>
+            <p>Advertisement.  Subjective questions.  Bug ridden code snippets.</p>
+            <h1>Can I use the site anonymously?</h1>
+            <p>Sure, everything on the site can be browsed as an anonymous user.  If you want to access the community features
+            such as voting and commenting, then you will have to login via OpenID or create an account.</p>
+            <h1>What is reputation?</h1>
+            <p>Reputation is an indication of how well trusted an user is on Django360.  Users with high reputations
+            can access higher level moderation features of the site such as editing any piece of content, access to
+            comments, moderation features, etc.  Reputation can be gained by having useful content upvoted by other users.</p>
+        </div>
+    </div>
+{% endblock %}
